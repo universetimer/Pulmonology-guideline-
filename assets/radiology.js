@@ -159,9 +159,13 @@
           const cat = STATE.data.categories.find(c => c.id === cid);
           return cat ? `<span class="mini-badge" title="${cat.name}">${cat.icon}</span>` : '';
         }).join('');
+      const dxBadge = (!STATE.quizMode && sl.dx_label)
+        ? `<span class="card-dx" title="${escapeHtml(sl.dx_label)}">🩺 ${escapeHtml(sl.dx_label.replace(/\s*\(.*\)/, ''))}</span>`
+        : '';
       info.innerHTML = `
         <div class="num">#${String(sl.idx).padStart(3, '0')} · ${escapeHtml(sl.source_label || '')}</div>
         <div class="ttl">${escapeHtml(STATE.quizMode ? '🤔 진단해보세요' : (sl.title || '(제목 없음)'))}</div>
+        ${dxBadge}
         <div class="badge-row">${cats}</div>
       `;
       card.appendChild(thumb);
@@ -199,7 +203,13 @@
       `${STATE.currentIdx + 1} / ${STATE.filtered.length}  ·  Slide ${sl.idx}`;
     $('#viewerSource').textContent = sl.source_label || '';
     $('#viewerTitle').textContent = sl.title || '(제목 없음)';
-    $('#viewerBody').textContent = sl.body || '(본문 없음)';
+    const highlightTerms = [
+      sl.dx_label,
+      ...(sl.finding_labels || []),
+    ].filter(Boolean);
+    $('#viewerBody').innerHTML = sl.body
+      ? formatBody(sl.body, { highlightTerms })
+      : '<p class="md-empty">(본문 없음)</p>';
 
     // 이미지 갤러리
     const images = getAllImages(sl);
@@ -240,7 +250,7 @@
     const notesWrap = $('#viewerNotesWrap');
     if (sl.notes && sl.notes.trim()) {
       notesWrap.hidden = false;
-      $('#viewerNotes').textContent = sl.notes;
+      $('#viewerNotes').innerHTML = formatBody(sl.notes, { highlightTerms });
     } else {
       notesWrap.hidden = true;
     }
@@ -328,6 +338,102 @@
     return (s || '').replace(/[&<>"']/g, c => (
       { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]
     ));
+  }
+
+  // ---------- formatBody / formatNotes: 가독성 변환 ----------
+  // 본문 텍스트를 줄 단위로 분석해서 목록·단락·라벨로 변환
+  function formatBody(text, opts = {}) {
+    if (!text) return '';
+    const highlightTerms = opts.highlightTerms || [];
+    // 줄 분리 + 빈 줄로 단락 구분
+    const paragraphs = String(text).replace(/\r\n/g, '\n')
+      .split(/\n\s*\n/).map(p => p.split('\n').map(l => l.replace(/\s+$/, '')));
+
+    const html = paragraphs.map(lines => renderParagraph(lines, highlightTerms)).join('');
+    return html || `<p>${escapeHtml(text)}</p>`;
+  }
+
+  function renderParagraph(lines, highlightTerms) {
+    // 라인 분류
+    const out = [];
+    let listType = null;  // 'ol' | 'ul' | null
+    let listItems = [];
+
+    const flushList = () => {
+      if (!listType) return;
+      out.push(`<${listType} class="md-list">${listItems.map(li => `<li>${li}</li>`).join('')}</${listType}>`);
+      listType = null;
+      listItems = [];
+    };
+
+    for (let raw of lines) {
+      const line = raw.trim();
+      if (!line) continue;
+      // 번호 목록: 1. 1) (1) #1.
+      let m = line.match(/^(?:#?\(?\s*\d+\s*[.)]\s+)(.+)$/);
+      if (m) {
+        if (listType !== 'ol') { flushList(); listType = 'ol'; }
+        listItems.push(formatInline(m[1], highlightTerms));
+        continue;
+      }
+      // 불릿: -, •, ·, *, →
+      m = line.match(/^[-•·*→]\s+(.+)$/);
+      if (m) {
+        if (listType !== 'ul') { flushList(); listType = 'ul'; }
+        listItems.push(formatInline(m[1], highlightTerms));
+        continue;
+      }
+      flushList();
+      // 콜론 포함: 라벨로 처리. R/O는 예외
+      const colonMatch = line.match(/^([^:：]{1,30})\s*[:：]\s*(.+)$/);
+      const isShortHeader = line.length <= 30 && !line.includes(':') && !line.includes('：');
+      if (colonMatch && !/^\s*r\s*\/\s*o\b/i.test(line)) {
+        out.push(`<p class="md-line"><b class="md-label">${formatInline(colonMatch[1], highlightTerms)}</b><span class="md-sep">:</span> ${formatInline(colonMatch[2], highlightTerms)}</p>`);
+      } else if (isShortHeader) {
+        // 짧은 한 줄 = 작은 헤더
+        out.push(`<p class="md-subhead">${formatInline(line, highlightTerms)}</p>`);
+      } else {
+        out.push(`<p class="md-line">${formatInline(line, highlightTerms)}</p>`);
+      }
+    }
+    flushList();
+    if (!out.length) return '';
+    return `<div class="md-para">${out.join('')}</div>`;
+  }
+
+  // 인라인 처리: HTML 이스케이프 + 키워드 강조
+  function formatInline(text, highlightTerms) {
+    let s = escapeHtml(text);
+    // R/O (Rule-out) 강조
+    s = s.replace(/\b(R\s*\/\s*O|r\s*\/\s*o)\b/g, '<span class="kw-ro">R/O</span>');
+    // 알려진 진단·소견 키워드 강조 (대소문자 무시, 단어 경계)
+    const seen = new Set();
+    for (const term of highlightTerms) {
+      // 라벨에서 괄호 안 영문 부분만 추출 시도 (예: "기흉 (Pneumothorax)" -> ["기흉","Pneumothorax"])
+      const pieces = String(term).split(/[()]/).map(x => x.trim()).filter(Boolean);
+      for (const p of pieces) {
+        const k = p.toLowerCase();
+        if (k.length < 3 || seen.has(k)) continue;
+        seen.add(k);
+        const esc = p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const re = new RegExp(`(?<![\\w가-힣])(${esc})(?![\\w가-힣])`, 'gi');
+        s = s.replace(re, '<mark class="kw-term">$1</mark>');
+      }
+    }
+    // 추가 일반 의학용어
+    const COMMON = [
+      'GGO', 'consolidation', 'cavity', 'cavitary', 'nodule', 'mass',
+      'pneumonia', 'pneumothorax', 'effusion', 'atelectasis', 'emphysema',
+      'bronchiectasis', 'honeycombing', 'fibrosis', 'cardiomegaly',
+      'lymphadenopathy', 'pulmonary edema', 'lung cancer', 'tuberculosis',
+      'TB', 'COPD', 'ARDS', 'PE',
+    ];
+    for (const w of COMMON) {
+      const esc = w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const re = new RegExp(`(?<![\\w가-힣<])(${esc})(?!\\w)`, 'gi');
+      s = s.replace(re, '<mark class="kw-term">$1</mark>');
+    }
+    return s;
   }
 
   load();

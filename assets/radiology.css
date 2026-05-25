@@ -172,6 +172,21 @@
   padding: 1px 6px;
   border-radius: 6px;
 }
+.slide-card .card-dx {
+  display: inline-block;
+  margin: 4px 0;
+  font-size: 11px;
+  background: #fde6e6;
+  color: #c00;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+  border: 1px solid #f5b5b5;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
 /* ---------- Viewer (modal) ---------- */
 .rad-viewer[hidden] { display: none !important; }
@@ -294,16 +309,97 @@
   line-height: 1.35;
 }
 .viewer-body {
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 15px;
+  line-height: 1.75;
   color: var(--text);
-  white-space: pre-wrap;
   word-break: break-word;
 }
 .viewer-body.hidden {
   filter: blur(8px);
   user-select: none;
   pointer-events: none;
+}
+/* --- markdown-like 가독성 클래스 --- */
+.viewer-body .md-para,
+.viewer-notes .md-para {
+  background: var(--bg-soft);
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin: 0 0 10px;
+  border-left: 3px solid #d0dbe6;
+}
+.viewer-body .md-para + .md-para,
+.viewer-notes .md-para + .md-para {
+  margin-top: 8px;
+}
+.viewer-body .md-line,
+.viewer-notes .md-line {
+  margin: 0 0 4px;
+}
+.viewer-body .md-line:last-child,
+.viewer-notes .md-line:last-child {
+  margin-bottom: 0;
+}
+.viewer-body .md-subhead,
+.viewer-notes .md-subhead {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 4px 0 6px;
+  letter-spacing: -0.2px;
+}
+.viewer-body .md-label,
+.viewer-notes .md-label {
+  color: var(--primary);
+  font-weight: 700;
+}
+.viewer-body .md-sep,
+.viewer-notes .md-sep {
+  color: var(--text-muted);
+  margin: 0 2px 0 0;
+}
+.viewer-body .md-list,
+.viewer-notes .md-list {
+  margin: 6px 0 6px 4px;
+  padding-left: 22px;
+}
+.viewer-body .md-list li,
+.viewer-notes .md-list li {
+  margin: 3px 0;
+  padding-left: 2px;
+}
+.viewer-body ol.md-list,
+.viewer-notes ol.md-list {
+  list-style: decimal;
+}
+.viewer-body ul.md-list,
+.viewer-notes ul.md-list {
+  list-style: disc;
+}
+.viewer-body .md-empty {
+  color: var(--text-muted);
+  font-style: italic;
+}
+/* 키워드 강조 */
+.viewer-body .kw-term,
+.viewer-notes .kw-term {
+  background: linear-gradient(180deg, transparent 55%, #fff3a6 55%);
+  color: var(--text);
+  font-weight: 600;
+  padding: 0 1px;
+  border-radius: 2px;
+}
+.viewer-body .kw-ro,
+.viewer-notes .kw-ro {
+  display: inline-block;
+  background: #fde6e6;
+  color: #c00;
+  font-weight: 700;
+  font-size: 0.85em;
+  padding: 1px 6px;
+  margin: 0 2px;
+  border-radius: 10px;
+  letter-spacing: 0.3px;
 }
 .reveal-btn {
   margin-top: 12px;
@@ -335,10 +431,14 @@
 }
 .viewer-notes summary::-webkit-details-marker { color: var(--primary); }
 .viewer-notes > div {
-  margin-top: 8px;
-  white-space: pre-wrap;
-  line-height: 1.6;
+  margin-top: 10px;
+  line-height: 1.7;
   color: var(--text);
+  font-size: 14px;
+}
+.viewer-notes .md-para {
+  background: #fffdf3;
+  border-left-color: #e6cf68;
 }
 
 /* mode tabs (study / quiz) */

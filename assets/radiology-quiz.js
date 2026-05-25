@@ -301,13 +301,14 @@
       ansLine.innerHTML = `정답: <b>${correctLabels.map(escapeHtml).join(', ')}</b>`;
     }
 
-    // 원본 슬라이드 발췌
+    // 원본 슬라이드 발췌 (가독성 포매팅)
     const sl = q.slide;
-    const explainParts = [];
-    if (sl.title) explainParts.push(`<b>${escapeHtml(sl.title)}</b>`);
-    if (sl.body) explainParts.push(escapeHtml(sl.body));
-    if (sl.notes) explainParts.push(`<i>${escapeHtml(sl.notes)}</i>`);
-    expText.innerHTML = explainParts.join('<br><br>');
+    const hi = [sl.dx_label, ...(sl.finding_labels || [])].filter(Boolean);
+    const parts = [];
+    if (sl.title) parts.push(`<h4 class="rq-explain-title">${escapeHtml(sl.title)}</h4>`);
+    if (sl.body) parts.push(`<div class="rq-explain-body">${formatBody(sl.body, hi)}</div>`);
+    if (sl.notes) parts.push(`<div class="rq-explain-notes"><b>📝 노트</b>${formatBody(sl.notes, hi)}</div>`);
+    expText.innerHTML = parts.join('');
 
     // source detail
     if (sl.body || sl.notes) {
@@ -490,6 +491,82 @@
     return (s || '').replace(/[&<>"']/g, c => (
       { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]
     ));
+  }
+
+  // ---------- 본문 가독성 포매팅 (radiology.js와 동일 로직) ----------
+  function formatBody(text, highlightTerms) {
+    if (!text) return '';
+    const terms = highlightTerms || [];
+    const paragraphs = String(text).replace(/\r\n/g, '\n')
+      .split(/\n\s*\n/).map(p => p.split('\n').map(l => l.replace(/\s+$/, '')));
+    return paragraphs.map(lines => renderParagraph(lines, terms)).join('') ||
+      `<p>${escapeHtml(text)}</p>`;
+  }
+
+  function renderParagraph(lines, terms) {
+    const out = [];
+    let listType = null, listItems = [];
+    const flush = () => {
+      if (!listType) return;
+      out.push(`<${listType} class="md-list">${listItems.map(li => `<li>${li}</li>`).join('')}</${listType}>`);
+      listType = null; listItems = [];
+    };
+    for (const raw of lines) {
+      const line = raw.trim();
+      if (!line) continue;
+      let m = line.match(/^(?:#?\(?\s*\d+\s*[.)]\s+)(.+)$/);
+      if (m) {
+        if (listType !== 'ol') { flush(); listType = 'ol'; }
+        listItems.push(formatInline(m[1], terms)); continue;
+      }
+      m = line.match(/^[-•·*→]\s+(.+)$/);
+      if (m) {
+        if (listType !== 'ul') { flush(); listType = 'ul'; }
+        listItems.push(formatInline(m[1], terms)); continue;
+      }
+      flush();
+      const colonMatch = line.match(/^([^:：]{1,30})\s*[:：]\s*(.+)$/);
+      const isShortHeader = line.length <= 30 && !line.includes(':') && !line.includes('：');
+      if (colonMatch && !/^\s*r\s*\/\s*o\b/i.test(line)) {
+        out.push(`<p class="md-line"><b class="md-label">${formatInline(colonMatch[1], terms)}</b><span class="md-sep">:</span> ${formatInline(colonMatch[2], terms)}</p>`);
+      } else if (isShortHeader) {
+        out.push(`<p class="md-subhead">${formatInline(line, terms)}</p>`);
+      } else {
+        out.push(`<p class="md-line">${formatInline(line, terms)}</p>`);
+      }
+    }
+    flush();
+    return out.length ? `<div class="md-para">${out.join('')}</div>` : '';
+  }
+
+  function formatInline(text, terms) {
+    let s = escapeHtml(text);
+    s = s.replace(/\b(R\s*\/\s*O|r\s*\/\s*o)\b/g, '<span class="kw-ro">R/O</span>');
+    const seen = new Set();
+    for (const term of (terms || [])) {
+      const pieces = String(term).split(/[()]/).map(x => x.trim()).filter(Boolean);
+      for (const p of pieces) {
+        const k = p.toLowerCase();
+        if (k.length < 3 || seen.has(k)) continue;
+        seen.add(k);
+        const esc = p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const re = new RegExp(`(?<![\\w가-힣])(${esc})(?![\\w가-힣])`, 'gi');
+        s = s.replace(re, '<mark class="kw-term">$1</mark>');
+      }
+    }
+    const COMMON = [
+      'GGO', 'consolidation', 'cavity', 'cavitary', 'nodule', 'mass',
+      'pneumonia', 'pneumothorax', 'effusion', 'atelectasis', 'emphysema',
+      'bronchiectasis', 'honeycombing', 'fibrosis', 'cardiomegaly',
+      'lymphadenopathy', 'pulmonary edema', 'lung cancer', 'tuberculosis',
+      'TB', 'COPD', 'ARDS', 'PE',
+    ];
+    for (const w of COMMON) {
+      const esc = w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const re = new RegExp(`(?<![\\w가-힣<])(${esc})(?!\\w)`, 'gi');
+      s = s.replace(re, '<mark class="kw-term">$1</mark>');
+    }
+    return s;
   }
 
   load();

@@ -84,7 +84,6 @@
       "notes": "",
       "image": "radiology/img-v2/b_image5.jpg",
       "extra_images": [
-        "radiology/img-v2/b_image6.jpg",
         "radiology/img-v2/b_image7.jpg"
       ],
       "cats": [
@@ -94,33 +93,6 @@
       "dx_label": null,
       "findings": [],
       "finding_labels": []
-    },
-    {
-      "idx": 35,
-      "source": "b",
-      "source_label": "판독 112 (2025)",
-      "title": "흉부 X-ray 판독 용어",
-      "body": "Micronodular opacity (소결절음영)\n: 지름 5mm 미만의 작은 원형의 음영\nNodular opacity (결절음영)\n: 지름 5~30mm 의 경계가 선명한 원영, 타원형\n의 음영\nMass (종괴 or 종괴음영)\n: 지름 30mm 를 넘는 커다란 음영\nLinear opacity (선상음영)\n: 폭 5mm 미만의 가늘고 긴 2cm 이상의 음영\n: line : 폭 2mm 미만의 길쭉한 음영\n: stripe : 폭 2-5mm 의 길쭉한 음영\n( ex ; paratracheal stripe )\nBand opacity (끈모양 음영)\n: 폭 5mm 이상의 길쭉한 2cm 이상의 음영\nReticular opacity (망상음영)\n: 다수의 작은 선상 음영이 겹쳐 그물모양을\n나타낸 것\n낭종 (cyst)\n공동 (cavity)\n벌집모양 폐 (Honeycomb app.)",
-      "notes": "",
-      "image": "radiology/img-v2/b_image12.jpg",
-      "extra_images": [],
-      "cats": [
-        "anatomy",
-        "intro",
-        "opacity"
-      ],
-      "dx": null,
-      "dx_label": null,
-      "findings": [
-        "mass_nodule",
-        "cavity",
-        "reticular"
-      ],
-      "finding_labels": [
-        "Mass / Nodule",
-        "Cavity",
-        "Reticular / Honeycombing"
-      ]
     },
     {
       "idx": 36,
@@ -630,8 +602,7 @@
       "image": "radiology/img-v2/b_image88.jpg",
       "extra_images": [
         "radiology/img-v2/b_image14.jpg",
-        "radiology/img-v2/b_image89.jpg",
-        "radiology/img-v2/b_image90.jpg"
+        "radiology/img-v2/b_image89.jpg"
       ],
       "cats": [
         "disease",
@@ -815,7 +786,6 @@
       "notes": "",
       "image": "radiology/img-v2/b_image122.jpg",
       "extra_images": [
-        "radiology/img-v2/b_image123.jpg",
         "radiology/img-v2/b_image124.jpg"
       ],
       "cats": [
@@ -2256,7 +2226,6 @@
       5,
       21,
       29,
-      35,
       36,
       37,
       38,

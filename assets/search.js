@@ -39,6 +39,7 @@
           <button class="sf-btn" data-type="summary">📋 요약본</button>
           <button class="sf-btn" data-type="quiz">🎯 시험</button>
           <button class="sf-btn" data-type="radiology">🩻 X-ray</button>
+          <button class="sf-btn" data-type="youtube" style="background:#ff0000;color:#fff;border-color:#ff0000">▶ YouTube</button>
         </div>
         <div class="search-results" id="searchResults"></div>
         <div class="search-hint">
@@ -174,16 +175,12 @@
 
     wrap.innerHTML = results.map((r, i) => renderResult(r.e, tokens, i)).join('');
     wrap.querySelectorAll('.sr-item').forEach(el => {
-      el.addEventListener('click', () => {
-        const url = el.dataset.url;
-        if (url) window.location.href = url;
-      });
+      el.addEventListener('click', () => openResult(el));
       el.addEventListener('mouseenter', () => {
         wrap.querySelectorAll('.sr-item.kbd-focus').forEach(x => x.classList.remove('kbd-focus'));
         el.classList.add('kbd-focus');
       });
     });
-    // 첫 결과에 키보드 포커스
     wrap.querySelector('.sr-item')?.classList.add('kbd-focus');
   }
 
@@ -191,17 +188,28 @@
     const titleHl = highlight(e.title, tokens);
     const snippetHl = highlight(e.snippet, tokens);
     const img = e.image ? `<div class="sr-thumb"><img src="${e.image}" loading="lazy" alt=""></div>` : '';
+    const ext = e.external ? ' data-external="1"' : '';
+    const arrow = e.external ? '↗' : '→';
     return `
-      <div class="sr-item" data-url="${e.url}" data-idx="${i}">
+      <div class="sr-item" data-url="${e.url}"${ext} data-idx="${i}">
         ${img}
         <div class="sr-body">
           <div class="sr-type">${e.typeName}</div>
           <div class="sr-title">${titleHl}</div>
           <div class="sr-snippet">${snippetHl}</div>
         </div>
-        <span class="sr-arrow">→</span>
+        <span class="sr-arrow">${arrow}</span>
       </div>
     `;
+  }
+
+  function openResult(el) {
+    if (!el?.dataset.url) return;
+    if (el.dataset.external === '1') {
+      window.open(el.dataset.url, '_blank', 'noopener');
+    } else {
+      window.location.href = el.dataset.url;
+    }
   }
 
   function navResults(e) {
@@ -222,8 +230,7 @@
       prev.scrollIntoView({ block: 'nearest' });
     } else if (e.key === 'Enter') {
       e.preventDefault();
-      const target = items[Math.max(cur, 0)];
-      if (target?.dataset.url) window.location.href = target.dataset.url;
+      openResult(items[Math.max(cur, 0)]);
     }
   }
 

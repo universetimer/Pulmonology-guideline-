@@ -1,0 +1,315 @@
+{
+  "channel": {
+    "id": "UCKt3w1s8jv-tNT-q2kLPU8w",
+    "handle": "@kaist79",
+    "name": "Lung study lab",
+    "url": "https://www.youtube.com/@kaist79",
+    "videosUrl": "https://www.youtube.com/@kaist79/videos",
+    "subscribeUrl": "https://www.youtube.com/@kaist79?sub_confirmation=1",
+    "tagline": "호흡음·청진·흉부 X-ray·CT·폐질환 강의 (의대생·전공의 교육)",
+    "subscribersText": "1.65천명"
+  },
+  "videos": [
+    {
+      "id": "mb0efJxiw24",
+      "title": "Wheeze + Stridor Together?",
+      "url": "https://www.youtube.com/watch?v=mb0efJxiw24",
+      "thumbnail": "https://i.ytimg.com/vi/mb0efJxiw24/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/mb0efJxiw24/hqdefault.jpg",
+      "viewsText": "조회수 58회",
+      "publishedText": "1개월 전",
+      "duration": ""
+    },
+    {
+      "id": "kDHfAL-46Vg",
+      "title": "Can You Recognize This Sound? 🔊",
+      "url": "https://www.youtube.com/watch?v=kDHfAL-46Vg",
+      "thumbnail": "https://i.ytimg.com/vi/kDHfAL-46Vg/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/kDHfAL-46Vg/hqdefault.jpg",
+      "viewsText": "조회수 31회",
+      "publishedText": "1개월 전",
+      "duration": ""
+    },
+    {
+      "id": "4CnGn0qMJkE",
+      "title": "Wheeze vs Crackles 🔊 | Can You Hear the Difference?",
+      "url": "https://www.youtube.com/watch?v=4CnGn0qMJkE",
+      "thumbnail": "https://i.ytimg.com/vi/4CnGn0qMJkE/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/4CnGn0qMJkE/hqdefault.jpg",
+      "viewsText": "조회수 31회",
+      "publishedText": "1개월 전",
+      "duration": ""
+    },
+    {
+      "id": "42_eMfa-wkM",
+      "title": "Normal vs Wheeze: Key Auscultation Difference",
+      "url": "https://www.youtube.com/watch?v=42_eMfa-wkM",
+      "thumbnail": "https://i.ytimg.com/vi/42_eMfa-wkM/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/42_eMfa-wkM/hqdefault.jpg",
+      "viewsText": "조회수 28회",
+      "publishedText": "1개월 전",
+      "duration": ""
+    },
+    {
+      "id": "sHVMzdmHrxU",
+      "title": "“Hear This? It’s Fine Crackles 🔍 IPF Clue!”",
+      "url": "https://www.youtube.com/watch?v=sHVMzdmHrxU",
+      "thumbnail": "https://i.ytimg.com/vi/sHVMzdmHrxU/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/sHVMzdmHrxU/hqdefault.jpg",
+      "viewsText": "조회수 46회",
+      "publishedText": "1개월 전",
+      "duration": ""
+    },
+    {
+      "id": "0XaNh3d_Z90",
+      "title": "소세포폐암 분류 및 기원 : Emerging molecular subtypes of SCLC and New theory of SCLC origin",
+      "url": "https://www.youtube.com/watch?v=0XaNh3d_Z90",
+      "thumbnail": "https://i.ytimg.com/vi/0XaNh3d_Z90/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/0XaNh3d_Z90/hqdefault.jpg",
+      "viewsText": "조회수 63회",
+      "publishedText": "2개월 전",
+      "duration": ""
+    },
+    {
+      "id": "aSqfzRlVRR4",
+      "title": "호흡음 & 인공지능을 이용한 호흡음 분석 (respiratory sounds & AI assisted respiratory sound classification)",
+      "url": "https://www.youtube.com/watch?v=aSqfzRlVRR4",
+      "thumbnail": "https://i.ytimg.com/vi/aSqfzRlVRR4/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/aSqfzRlVRR4/hqdefault.jpg",
+      "viewsText": "조회수 765회",
+      "publishedText": "1년 전",
+      "duration": ""
+    },
+    {
+      "id": "As9lbh6Jxns",
+      "title": "Situs inversus, IPF ( 흉부 X-ray 사진)",
+      "url": "https://www.youtube.com/watch?v=As9lbh6Jxns",
+      "thumbnail": "https://i.ytimg.com/vi/As9lbh6Jxns/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/As9lbh6Jxns/hqdefault.jpg",
+      "viewsText": "조회수 295회",
+      "publishedText": "2년 전",
+      "duration": ""
+    },
+    {
+      "id": "3GAL3Zjq0Gs",
+      "title": "폐기능 검사의 이해와 해석 (Pulmonary function test)",
+      "url": "https://www.youtube.com/watch?v=3GAL3Zjq0Gs",
+      "thumbnail": "https://i.ytimg.com/vi/3GAL3Zjq0Gs/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/3GAL3Zjq0Gs/hqdefault.jpg",
+      "viewsText": "조회수 2.2천회",
+      "publishedText": "2년 전",
+      "duration": ""
+    },
+    {
+      "id": "vk8gbs_AcUI",
+      "title": "Chest PA 판독 연습 14 Cases | 흉부 X-ray 핵심 소견 정리",
+      "url": "https://www.youtube.com/watch?v=vk8gbs_AcUI",
+      "thumbnail": "https://i.ytimg.com/vi/vk8gbs_AcUI/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/vk8gbs_AcUI/hqdefault.jpg",
+      "viewsText": "조회수 1.1천회",
+      "publishedText": "2년 전",
+      "duration": ""
+    },
+    {
+      "id": "-LOc9c0L0SQ",
+      "title": "폐암 오가노이드 (Lung cancer organoid)",
+      "url": "https://www.youtube.com/watch?v=-LOc9c0L0SQ",
+      "thumbnail": "https://i.ytimg.com/vi/-LOc9c0L0SQ/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/-LOc9c0L0SQ/hqdefault.jpg",
+      "viewsText": "조회수 182회",
+      "publishedText": "2년 전",
+      "duration": ""
+    },
+    {
+      "id": "GDZUAmq7zOk",
+      "title": "폐암 최신 진단과 치료 (2024)",
+      "url": "https://www.youtube.com/watch?v=GDZUAmq7zOk",
+      "thumbnail": "https://i.ytimg.com/vi/GDZUAmq7zOk/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/GDZUAmq7zOk/hqdefault.jpg",
+      "viewsText": "조회수 1.2천회",
+      "publishedText": "2년 전",
+      "duration": ""
+    },
+    {
+      "id": "nU9LLKUYlYg",
+      "title": "Wheezing (천명음)",
+      "url": "https://www.youtube.com/watch?v=nU9LLKUYlYg",
+      "thumbnail": "https://i.ytimg.com/vi/nU9LLKUYlYg/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/nU9LLKUYlYg/hqdefault.jpg",
+      "viewsText": "조회수 1.5만회",
+      "publishedText": "2년 전",
+      "duration": ""
+    },
+    {
+      "id": "Lzmvo2DrAj0",
+      "title": "Crackle",
+      "url": "https://www.youtube.com/watch?v=Lzmvo2DrAj0",
+      "thumbnail": "https://i.ytimg.com/vi/Lzmvo2DrAj0/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/Lzmvo2DrAj0/hqdefault.jpg",
+      "viewsText": "조회수 4.1천회",
+      "publishedText": "2년 전",
+      "duration": ""
+    },
+    {
+      "id": "5h0jCHXXGMc",
+      "title": "Rhonchi [통음]",
+      "url": "https://www.youtube.com/watch?v=5h0jCHXXGMc",
+      "thumbnail": "https://i.ytimg.com/vi/5h0jCHXXGMc/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/5h0jCHXXGMc/hqdefault.jpg",
+      "viewsText": "조회수 603회",
+      "publishedText": "2년 전",
+      "duration": ""
+    },
+    {
+      "id": "vF2k5KuZkOY",
+      "title": "간질성 폐질환 (ILD)",
+      "url": "https://www.youtube.com/watch?v=vF2k5KuZkOY",
+      "thumbnail": "https://i.ytimg.com/vi/vF2k5KuZkOY/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/vF2k5KuZkOY/hqdefault.jpg",
+      "viewsText": "조회수 580회",
+      "publishedText": "2년 전",
+      "duration": ""
+    },
+    {
+      "id": "eFrlm0Su89k",
+      "title": "호흡기 내과 주치의 매뉴얼 : 천식",
+      "url": "https://www.youtube.com/watch?v=eFrlm0Su89k",
+      "thumbnail": "https://i.ytimg.com/vi/eFrlm0Su89k/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/eFrlm0Su89k/hqdefault.jpg",
+      "viewsText": "조회수 454회",
+      "publishedText": "2년 전",
+      "duration": ""
+    },
+    {
+      "id": "OTOqVGnGlqM",
+      "title": "호흡기 내과 주치의 병동 매뉴얼 (폐암)",
+      "url": "https://www.youtube.com/watch?v=OTOqVGnGlqM",
+      "thumbnail": "https://i.ytimg.com/vi/OTOqVGnGlqM/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/OTOqVGnGlqM/hqdefault.jpg",
+      "viewsText": "조회수 532회",
+      "publishedText": "2년 전",
+      "duration": ""
+    },
+    {
+      "id": "4FiFP-gdkEc",
+      "title": "호흡기 내과 주치의 매뉴얼 : COPD",
+      "url": "https://www.youtube.com/watch?v=4FiFP-gdkEc",
+      "thumbnail": "https://i.ytimg.com/vi/4FiFP-gdkEc/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/4FiFP-gdkEc/hqdefault.jpg",
+      "viewsText": "조회수 520회",
+      "publishedText": "2년 전",
+      "duration": ""
+    },
+    {
+      "id": "lzupDp5KMCU",
+      "title": "Chest X-ray 판독 (11-20 case)",
+      "url": "https://www.youtube.com/watch?v=lzupDp5KMCU",
+      "thumbnail": "https://i.ytimg.com/vi/lzupDp5KMCU/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/lzupDp5KMCU/hqdefault.jpg",
+      "viewsText": "조회수 3.2천회",
+      "publishedText": "2년 전",
+      "duration": ""
+    },
+    {
+      "id": "_JK5MC7zaGc",
+      "title": "Chest X ray 판독 (1-10 case)",
+      "url": "https://www.youtube.com/watch?v=_JK5MC7zaGc",
+      "thumbnail": "https://i.ytimg.com/vi/_JK5MC7zaGc/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/_JK5MC7zaGc/hqdefault.jpg",
+      "viewsText": "조회수 1.2만회",
+      "publishedText": "2년 전",
+      "duration": ""
+    },
+    {
+      "id": "gzjeXAsCJQ4",
+      "title": "흉부 X선 (Chest X-ray) 사진 판독, version 2",
+      "url": "https://www.youtube.com/watch?v=gzjeXAsCJQ4",
+      "thumbnail": "https://i.ytimg.com/vi/gzjeXAsCJQ4/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/gzjeXAsCJQ4/hqdefault.jpg",
+      "viewsText": "조회수 4.3천회",
+      "publishedText": "2년 전",
+      "duration": ""
+    },
+    {
+      "id": "iklQXDpd6F8",
+      "title": "호흡기내과 병동 매뉴얼 part I",
+      "url": "https://www.youtube.com/watch?v=iklQXDpd6F8",
+      "thumbnail": "https://i.ytimg.com/vi/iklQXDpd6F8/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/iklQXDpd6F8/hqdefault.jpg",
+      "viewsText": "조회수 1.5천회",
+      "publishedText": "2년 전",
+      "duration": ""
+    },
+    {
+      "id": "4zxa1A0QaMY",
+      "title": "crackle (수포음)",
+      "url": "https://www.youtube.com/watch?v=4zxa1A0QaMY",
+      "thumbnail": "https://i.ytimg.com/vi/4zxa1A0QaMY/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/4zxa1A0QaMY/hqdefault.jpg",
+      "viewsText": "조회수 7.3천회",
+      "publishedText": "3년 전",
+      "duration": ""
+    },
+    {
+      "id": "_qsOt8ZxfcI",
+      "title": "1. 특발성 폐섬유증 증례(Idiopathic pulmonary fibrosis:IPF)",
+      "url": "https://www.youtube.com/watch?v=_qsOt8ZxfcI",
+      "thumbnail": "https://i.ytimg.com/vi/_qsOt8ZxfcI/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/_qsOt8ZxfcI/hqdefault.jpg",
+      "viewsText": "조회수 3천회",
+      "publishedText": "3년 전",
+      "duration": ""
+    },
+    {
+      "id": "nUCTS2LZZ6E",
+      "title": "흉부 X선 (Chest X-ray) 사진 판독",
+      "url": "https://www.youtube.com/watch?v=nUCTS2LZZ6E",
+      "thumbnail": "https://i.ytimg.com/vi/nUCTS2LZZ6E/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/nUCTS2LZZ6E/hqdefault.jpg",
+      "viewsText": "조회수 1.1만회",
+      "publishedText": "3년 전",
+      "duration": ""
+    },
+    {
+      "id": "wervvvHpP90",
+      "title": "흉부 X선 사진 (Chest X ray)",
+      "url": "https://www.youtube.com/watch?v=wervvvHpP90",
+      "thumbnail": "https://i.ytimg.com/vi/wervvvHpP90/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/wervvvHpP90/hqdefault.jpg",
+      "viewsText": "조회수 3.1천회",
+      "publishedText": "4년 전",
+      "duration": ""
+    },
+    {
+      "id": "XnMfvRovWlE",
+      "title": "** 청진/호흡음 퀴즈(고급 1) : Lung sound quiz (20문제), 자막에 정답 있음.",
+      "url": "https://www.youtube.com/watch?v=XnMfvRovWlE",
+      "thumbnail": "https://i.ytimg.com/vi/XnMfvRovWlE/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/XnMfvRovWlE/hqdefault.jpg",
+      "viewsText": "조회수 2.1천회",
+      "publishedText": "5년 전",
+      "duration": ""
+    },
+    {
+      "id": "UEkcevaXhHk",
+      "title": "** 청진/호흡음 퀴즈(초급 3) : Lung sound quiz (20문제), 자막에 정답 있음.",
+      "url": "https://www.youtube.com/watch?v=UEkcevaXhHk",
+      "thumbnail": "https://i.ytimg.com/vi/UEkcevaXhHk/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/UEkcevaXhHk/hqdefault.jpg",
+      "viewsText": "조회수 1천회",
+      "publishedText": "5년 전",
+      "duration": ""
+    },
+    {
+      "id": "2hb_Wc4e7eU",
+      "title": "** 청진 퀴즈 (초급2)  : Lung sound quiz (2021-2, 15문제) 자막에 정답있음",
+      "url": "https://www.youtube.com/watch?v=2hb_Wc4e7eU",
+      "thumbnail": "https://i.ytimg.com/vi/2hb_Wc4e7eU/mqdefault.jpg",
+      "thumbnailHQ": "https://i.ytimg.com/vi/2hb_Wc4e7eU/hqdefault.jpg",
+      "viewsText": "조회수 545회",
+      "publishedText": "5년 전",
+      "duration": ""
+    }
+  ],
+  "lastFetched": "2026-05-25T23:15:01.520371+00:00"
+}
