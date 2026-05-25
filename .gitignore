@@ -25,3 +25,9 @@ node_modules/
 # 25MB 초과 - Cloudflare Pages 한도 (GitHub Release로 별도 업로드)
 files/manual-v18-with-2026-supplement.docx
 files/*.docx
+
+# Radiology - 사용하지 않는 raw / 중간 결과물 (사이트는 radiology/img/ 만 사용)
+radiology/_raw/
+radiology/img-v2/
+assets/radiology_full.json
+downloads/

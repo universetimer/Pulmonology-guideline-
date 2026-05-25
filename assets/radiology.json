@@ -1,0 +1,1763 @@
+{
+  "slides": [
+    {
+      "idx": 1,
+      "title": "흉부 사진 판독",
+      "body": "흉부 사진 판독",
+      "notes": "",
+      "image": null,
+      "cats": [
+        "intro"
+      ]
+    },
+    {
+      "idx": 2,
+      "title": "Chest PA 확인할 때 유의사항",
+      "body": "1. 이상소견 있으면 old film과 비교\n2. 양측 lung 비교하기\n3. Retrocardiac area를 잘 보기\n4. Diaphragm margin 잘 보기\n5. Mediastinal widening 확인\n6. Apex쪽 다시 한번 확인\n7. 다시 한번 보기",
+      "notes": "",
+      "image": "radiology/img/slide_002.jpg",
+      "cats": [
+        "intro"
+      ]
+    },
+    {
+      "idx": 3,
+      "title": "Chest PA 에서 의심할 수 있는 대표질환",
+      "body": "Lung mass (lung cancer…)\nInterstitial lung disease (IPF, NSIP…)\nPulmonary tuberculosis, NTM\nPneumonia\nBronchiectasis\nCOPD (emphysema)\nCPFE(combined pulmonary fibrosis and emphysema)\nPneumothorax",
+      "notes": "",
+      "image": null,
+      "cats": [
+        "intro",
+        "disease",
+        "pleural"
+      ]
+    },
+    {
+      "idx": 4,
+      "title": "Chest PA",
+      "body": "환자가 직립상태에서 앞가슴을 필름에 대고 서 있으면 환자의 등뒤에서 X선을 방사상으로 방사하여 촬영한 것.\n최대한 숨을 들여 마신 후 숨을 잠깐 참은 상태에서 촬영\n 폐를 최대한 팽창시켜 폐혈관등의 구조물들이 서로 중첩되지 않도록..",
+      "notes": "",
+      "image": "radiology/img/slide_004.jpg",
+      "cats": [
+        "intro"
+      ]
+    },
+    {
+      "idx": 5,
+      "title": "Chest PA",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_005.jpg",
+      "cats": [
+        "intro"
+      ]
+    },
+    {
+      "idx": 6,
+      "title": "Chest Lat.",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_006.jpg",
+      "cats": [
+        "intro"
+      ]
+    },
+    {
+      "idx": 7,
+      "title": "Chest Lat.",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_007.jpg",
+      "cats": [
+        "intro"
+      ]
+    },
+    {
+      "idx": 8,
+      "title": "흉부 X-ray 판독 용어",
+      "body": "Micronodular opacity (소결절음영)\n: 지름 5mm 미만의 작은 원형의 음영\nNodular opacity (결절음영)\n: 지름 5~30mm 의 경계가 선명한 원영, 타원형\n의 음영\nMass (종괴 or 종괴음영)\n: 지름 30mm 를 넘는 커다란 음영\nLinear opacity (선상음영)\n: 폭 5mm 미만의 가늘고 긴 2cm 이상의 음영\n: line : 폭 2mm 미만의 길쭉한 음영\n: stripe : 폭 2-5mm 의 길쭉한 음영\n( ex ; paratracheal stripe )\nBand opacity (끈모양 음영)\n: 폭 5mm 이상의 길쭉한 2cm 이상의 음영\nReticular opacity (망상음영)\n: 다수의 작은 선상 음영이 겹쳐 그물모양을\n나타낸 것\n낭종 (cyst)\n공동 (cavity)\n벌집모양 폐 (Honeycomb app.)",
+      "notes": "",
+      "image": "radiology/img/slide_008.jpg",
+      "cats": [
+        "intro",
+        "anatomy",
+        "opacity",
+        "disease"
+      ]
+    },
+    {
+      "idx": 9,
+      "title": "흉부 X-ray 판독 용어",
+      "body": "기본\nLung volume\nSymmetric/asymmetric\nDecreased(hypoinflation)\nIncrease(hyperinflation)\n병변의 범위/양상\nBilateral\nFocal/Diffuse\nSolitary/Multifocal\nPatchy\nSymmetric\nAsymmetric\nMiliary\nHematogenous spread\nLymphangitic spread\n위치\nSubpleural area dominant/sparing\nApical area\nCentrally, peripherally\nAP(aortopulmonary) window\n크기\nVarious sizes\nHomogenous/heterogenous dense opacity\nSign\nKerley A/Kerley B sign\nGolden S sign",
+      "notes": "",
+      "image": "radiology/img/slide_009.jpg",
+      "cats": [
+        "intro",
+        "anatomy",
+        "opacity",
+        "volume"
+      ]
+    },
+    {
+      "idx": 10,
+      "title": "흉부 X-ray 판독 용어",
+      "body": "이상소견\nHilar lymphadenopathy\nMediastinal widening\nCPA blunting, located effusion\nCalcified nodules\nSpiculated nodule, smooth margin\nReticular opacity\nHoneycomb/ Traction bronchiectasis\nGGO : pure GGO, part solid nodule\nConsolidation\nCavity, Bullae\nEmphysematous lesions\nPneumothorax\nsubcutaneous emphysema\nTram-track sign  Bronchiectasis\nCystic bronchiectasis\nAir-fluid level\nSenile change\nDoubling time\nAcute/chronic",
+      "notes": "",
+      "image": "radiology/img/slide_010.jpg",
+      "cats": [
+        "intro",
+        "opacity",
+        "disease",
+        "pleural"
+      ]
+    },
+    {
+      "idx": 11,
+      "title": "Types of opacity",
+      "body": "Nodular opacity\nReticular opacity\nMiliary opacity\nConsolidation\nGGO",
+      "notes": "",
+      "image": "radiology/img/slide_011.jpg",
+      "cats": [
+        "opacity"
+      ]
+    },
+    {
+      "idx": 12,
+      "title": "Lung volume",
+      "body": "Lung volume\nHyperinflated lung\nFlattening of diaphragm",
+      "notes": "",
+      "image": "radiology/img/slide_012.jpg",
+      "cats": [
+        "volume"
+      ]
+    },
+    {
+      "idx": 13,
+      "title": "Hyperinflated lung",
+      "body": "Hyperinflated lung",
+      "notes": "",
+      "image": "radiology/img/slide_013.jpg",
+      "cats": [
+        "volume"
+      ]
+    },
+    {
+      "idx": 14,
+      "title": "Hyperinflated lung",
+      "body": "Hyperinflated lung\nEmphysema (폐기종)",
+      "notes": "tram-track sign due to copd",
+      "image": "radiology/img/slide_014.jpg",
+      "cats": [
+        "volume",
+        "disease"
+      ]
+    },
+    {
+      "idx": 15,
+      "title": "Silhouette sign (+)",
+      "body": "loss of outline sign\n심장\n- 흉부의 앞쪽에 위치\n- 오른쪽은 RML의 med. seg와 접해있고 왼쪽은 lingular seg.와 접함.",
+      "notes": "(왼쪽 사진)\n오른쪽  심장경계는 잘 안그려지고 diaphragm은 비교적 잘보임 -> RML병변",
+      "image": "radiology/img/slide_015.jpg",
+      "cats": [
+        "anatomy"
+      ]
+    },
+    {
+      "idx": 16,
+      "title": "Silhouette sign (+)",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_016.jpg",
+      "cats": [
+        "anatomy"
+      ]
+    },
+    {
+      "idx": 17,
+      "title": "Silhouette sign (+)",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_017.jpg",
+      "cats": [
+        "anatomy"
+      ]
+    },
+    {
+      "idx": 18,
+      "title": "Silhouette sign (+)",
+      "body": "Silhouette sign (+)",
+      "notes": "",
+      "image": "radiology/img/slide_018.jpg",
+      "cats": [
+        "anatomy"
+      ]
+    },
+    {
+      "idx": 19,
+      "title": "Silhouette sign (+)",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_019.jpg",
+      "cats": [
+        "anatomy"
+      ]
+    },
+    {
+      "idx": 20,
+      "title": "Silhouette sign (-)",
+      "body": "Silhouette sign (-)",
+      "notes": "lung cancer, COPD, probably CPFE\n\n1. Nodular consolidative lesion in left mid lung lung. R/O lung mass. \u000b2. Old inflamamtory lesion in left apical lung zone. \u000b3. ILD finding, with emphysematous change.",
+      "image": "radiology/img/slide_020.jpg",
+      "cats": [
+        "anatomy",
+        "opacity",
+        "disease"
+      ]
+    },
+    {
+      "idx": 21,
+      "title": "Silhouette sign (-)",
+      "body": "Silhouette sign (-)",
+      "notes": "E,mphysematous change\nLUL consolidation과 nodular consolidation 관찰\n\nR/O lung mass\n*compared with previous CT on 2023-04-22.\n\n1. Findings suggestive of primary lung malignancy and related findings (T4N3M1):\n   1) About 13 cm heterogenously enhancing mass in RLL with transfissural extention into RUL, suggesting primary lung malignancy.\n        - direct invasion of pleura.\n   2) Multiple enlarged lymph nodes in mediastinum and both hila, both supraclavicular areas, left lateral neck, and left axillary areas, suggesting metastatic LAPs.\n   3) Small amount of pleural effusion with nodularity in left hemithorax, probably pleural metastasis.\n\n2. 1) Fibrocicatrization with traction bronchiectasis and calcified nodules in LUL, probably old inflammatory lesion such as tuberculosis.\n    2) Confluent centrilobular emphysema and paraseptal emyphsema in both lungs.\n    3) Subpleural fibrotic ILA or early ILD findings.\n\n3. Small amount of pericardial effusion.\n\nrec) Bx. and tumor staging workup",
+      "image": "radiology/img/slide_021.jpg",
+      "cats": [
+        "anatomy",
+        "opacity",
+        "disease",
+        "pleural"
+      ]
+    },
+    {
+      "idx": 22,
+      "title": "Silhouette sign (-)",
+      "body": "Silhouette sign (-)",
+      "notes": "",
+      "image": "radiology/img/slide_022.jpg",
+      "cats": [
+        "anatomy"
+      ]
+    },
+    {
+      "idx": 23,
+      "title": "김O순 (80/F) CC. Evaluation",
+      "body": "김O순 (80/F) CC. Evaluation\nSilhouette sign (-)",
+      "notes": "",
+      "image": "radiology/img/slide_023.jpg",
+      "cats": [
+        "anatomy",
+        "case"
+      ]
+    },
+    {
+      "idx": 24,
+      "title": "김O순 (80/F) CC. Evaluation",
+      "body": "김O순 (80/F) CC. Evaluation\nHilar enlargement, Rt.",
+      "notes": "",
+      "image": "radiology/img/slide_024.jpg",
+      "cats": [
+        "case"
+      ]
+    },
+    {
+      "idx": 25,
+      "title": "Silhouette sign (+)",
+      "body": "Silhouette sign (+)",
+      "notes": "",
+      "image": "radiology/img/slide_025.jpg",
+      "cats": [
+        "anatomy"
+      ]
+    },
+    {
+      "idx": 26,
+      "title": "Silhouette sign (+)",
+      "body": "Silhouette sign (+)",
+      "notes": "",
+      "image": "radiology/img/slide_026.jpg",
+      "cats": [
+        "anatomy"
+      ]
+    },
+    {
+      "idx": 27,
+      "title": "박O우 (58/M) CC. Dyspnea",
+      "body": "박O우 (58/M) CC. Dyspnea",
+      "notes": "",
+      "image": "radiology/img/slide_027.jpg",
+      "cats": [
+        "case"
+      ]
+    },
+    {
+      "idx": 28,
+      "title": "Silhouette sign (-)",
+      "body": "Silhouette sign (-)",
+      "notes": "",
+      "image": "radiology/img/slide_028.jpg",
+      "cats": [
+        "anatomy"
+      ]
+    },
+    {
+      "idx": 29,
+      "title": "Silhouette sign (-)",
+      "body": "Silhouette sign (-)",
+      "notes": "",
+      "image": "radiology/img/slide_029.jpg",
+      "cats": [
+        "anatomy"
+      ]
+    },
+    {
+      "idx": 30,
+      "title": "Air-bronchogram",
+      "body": "정상적으로 기도는 중심부의 큰 기관지나 X선에 정면으로 주행하는\n폐실질의 기관지를 제외하고는 보이지 않는다.\n폐포강 내의 공기가 삼출성 물질로 대치되면 음영이 증가되고 그 속에\n공기가 차 있는 기관지가 대조되어 사진상에서 나타남.\n air-bronchogram\n흔한 원인 : 폐렴, 폐부종",
+      "notes": "",
+      "image": "radiology/img/slide_030.jpg",
+      "cats": [
+        "anatomy"
+      ]
+    },
+    {
+      "idx": 31,
+      "title": "Air-bronchogram",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_031.jpg",
+      "cats": [
+        "anatomy"
+      ]
+    },
+    {
+      "idx": 32,
+      "title": "Bulla",
+      "body": "1cm 이상의 공기를 포함하는 구조물, 대부분 1mm를 넘지 않는\n얇은 벽에 의해 명확히 경계됨.",
+      "notes": "",
+      "image": "radiology/img/slide_032.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 33,
+      "title": "Cavity",
+      "body": "Consolidation, mass, nodule내부에 방사선 투과성 또는 저음영의 공기로 차있는 공간\nCyst 보다 wall이 두껍다.",
+      "notes": "L : lung cancer\nR : TBc",
+      "image": "radiology/img/slide_033.jpg",
+      "cats": [
+        "opacity",
+        "disease"
+      ]
+    },
+    {
+      "idx": 34,
+      "title": "Consolidation (alveolar opacity)",
+      "body": "폐포가 공기대신 transudate, exudate, 출혈, 세포, 단백물질등으로\n완전히 대체되어서 폐혈관 윤곽이 소실될 정도로 증가한 음영\ncf) GGO : 폐혈관윤곽을 소실시키지 않을 정도로 증가한 음영\nRLL consolidation\n공기기관지 음영\n(air-bronchogram)",
+      "notes": "",
+      "image": "radiology/img/slide_034.jpg",
+      "cats": [
+        "anatomy",
+        "opacity"
+      ]
+    },
+    {
+      "idx": 35,
+      "title": "GGO(Ground Glass Opacity)",
+      "body": "GGO : 폐혈관윤곽을 소실시키지 않을 정도로 증가한 음영\nInterstitial opacity\n병리학적으로 Alveolitis, atypical adenomatous hyperplasia\nadenocarcinoma in situ",
+      "notes": "",
+      "image": "radiology/img/slide_035.jpg",
+      "cats": [
+        "opacity"
+      ]
+    },
+    {
+      "idx": 36,
+      "title": "Consolidation and GGO",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_036.jpg",
+      "cats": [
+        "opacity"
+      ]
+    },
+    {
+      "idx": 37,
+      "title": "Consolidation and GGO",
+      "body": "Normal",
+      "notes": "",
+      "image": "radiology/img/slide_037.jpg",
+      "cats": [
+        "opacity"
+      ]
+    },
+    {
+      "idx": 38,
+      "title": "Consolidation and GGO",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_038.jpg",
+      "cats": [
+        "opacity"
+      ]
+    },
+    {
+      "idx": 39,
+      "title": "Emphysema & Bullae",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_039.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 40,
+      "title": "Emphysema & Bullae",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_040.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 41,
+      "title": "Emphysema & Bullae",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_041.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 42,
+      "title": "Slide 42",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_042.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 43,
+      "title": "Reticular pattern (망상형 패턴)",
+      "body": "망상 구조  특정한 다각형이 이어진 그물 모양의 구조\n수없이 많은 작은 선상 음영들이 모여 그물과 유사한 망상 음영을 보이는것\n소엽간 중격(Interlobular septa)의 비후, 소엽내 간엽(intralobular interstitium)의 비후\n간질성 폐질환 등 시사, honeycombing등에 의한 소견",
+      "notes": "",
+      "image": "radiology/img/slide_043.jpg",
+      "cats": [
+        "opacity"
+      ]
+    },
+    {
+      "idx": 44,
+      "title": "Reticular pattern (망상형 패턴)",
+      "body": "Reticular pattern (망상형 패턴)\nInterlobular septa\nIntralobular interstitium\nSecondary pulmonary lobule\nSecondary pulmonary lobule",
+      "notes": "",
+      "image": "radiology/img/slide_044.jpg",
+      "cats": [
+        "anatomy",
+        "opacity"
+      ]
+    },
+    {
+      "idx": 45,
+      "title": "Secondary pulmonary lobule",
+      "body": "Secondary pulmonary lobule",
+      "notes": "",
+      "image": "radiology/img/slide_045.jpg",
+      "cats": [
+        "anatomy"
+      ]
+    },
+    {
+      "idx": 46,
+      "title": "Secondary pulmonary lobule",
+      "body": "Secondary pulmonary lobule\nlb = lobular bronchiole",
+      "notes": "",
+      "image": "radiology/img/slide_046.jpg",
+      "cats": [
+        "anatomy"
+      ]
+    },
+    {
+      "idx": 47,
+      "title": "Honeycomb",
+      "body": "밀집해(clustered)있는 낭성 공기공간, interstitial opacity\n직경 3~10mm~2.5cm, 낭포의 벽 두께는 약 1~3mm\n경계가 분명하고 주로 흉막하부에서 층을 이룸",
+      "notes": "",
+      "image": "radiology/img/slide_047.jpg",
+      "cats": [
+        "opacity"
+      ]
+    },
+    {
+      "idx": 48,
+      "title": "GGO with reticular opacity and traction bronchiectasis",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_048.jpg",
+      "cats": [
+        "opacity",
+        "disease"
+      ]
+    },
+    {
+      "idx": 49,
+      "title": "IPF",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_049.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 50,
+      "title": "IPF",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_050.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 51,
+      "title": "IPF",
+      "body": "IPF",
+      "notes": "",
+      "image": "radiology/img/slide_051.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 52,
+      "title": "Reticular pattern & GGO",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_052.jpg",
+      "cats": [
+        "opacity"
+      ]
+    },
+    {
+      "idx": 53,
+      "title": "Tree-in-bud appearance",
+      "body": "소엽중심부에 분지하는 구조물로 나뭇가지에 싹이 나는 모양과 유사\n폐결핵을 시사하는 소견",
+      "notes": "R : DPB",
+      "image": "radiology/img/slide_053.jpg",
+      "cats": [
+        "opacity"
+      ]
+    },
+    {
+      "idx": 54,
+      "title": "Miliary pattern",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_054.jpg",
+      "cats": [
+        "opacity"
+      ]
+    },
+    {
+      "idx": 55,
+      "title": "Atelectasis (폐 허탈)",
+      "body": "다양한 질환에 의해 폐의 일부 또는 전체의 공기의 감소와 함께 용적감소를 보이는 경우\n폐 확장부전이나 폐 허탈(collapse) 등과 함께 혼용되어 쓰인다.\nGolden S sign ( = inverted S sign)\n- 우상엽의 무기폐에서 보임\n- 폐암의 소견을 암시\n- Arrow : 위쪽으로 이동한 minor fissure\n- Arrow head: 종괴에 의해 이동하지 못한 minor fissure",
+      "notes": "",
+      "image": "radiology/img/slide_055.jpg",
+      "cats": [
+        "volume"
+      ]
+    },
+    {
+      "idx": 56,
+      "title": "Lobar atelectasis",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_056.jpg",
+      "cats": [
+        "volume"
+      ]
+    },
+    {
+      "idx": 57,
+      "title": "Atelectasis",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_057.jpg",
+      "cats": [
+        "volume"
+      ]
+    },
+    {
+      "idx": 58,
+      "title": "Atelectasis",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_058.jpg",
+      "cats": [
+        "volume"
+      ]
+    },
+    {
+      "idx": 59,
+      "title": "Atelectasis",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_059.jpg",
+      "cats": [
+        "volume"
+      ]
+    },
+    {
+      "idx": 60,
+      "title": "Loculated effusion, air fluid level",
+      "body": "",
+      "notes": "L : abscess – cavity내부에 공기-물 층을 보임\nR : Diaphragmatic hermia",
+      "image": "radiology/img/slide_060.jpg",
+      "cats": [
+        "disease",
+        "pleural"
+      ]
+    },
+    {
+      "idx": 61,
+      "title": "Paratracheal stripe",
+      "body": "<Right para-tracheal stripe>\nRight tracheal wall, adjacent pleural surfaces and any mediastinal fat between them\nnormally measures less than 4 mm\nThickening\n- lipoma\n- paratracheal lymphadenopathy\n- thyroid malignancy\n- parathyroid malignancy\n- tracheal malignancy",
+      "notes": "",
+      "image": "radiology/img/slide_061.jpg",
+      "cats": [
+        "anatomy"
+      ]
+    },
+    {
+      "idx": 62,
+      "title": "Paratracheal stripe",
+      "body": "Paratracheal stripe",
+      "notes": "",
+      "image": "radiology/img/slide_062.jpg",
+      "cats": [
+        "anatomy"
+      ]
+    },
+    {
+      "idx": 63,
+      "title": "Paratracheal stripe",
+      "body": "Paratracheal stripe",
+      "notes": "",
+      "image": "radiology/img/slide_063.jpg",
+      "cats": [
+        "anatomy"
+      ]
+    },
+    {
+      "idx": 64,
+      "title": "유O열 (70/M) CC.dyspnea",
+      "body": "유O열 (70/M) CC.dyspnea\nParatracheal stripe",
+      "notes": "",
+      "image": "radiology/img/slide_064.jpg",
+      "cats": [
+        "anatomy",
+        "case"
+      ]
+    },
+    {
+      "idx": 65,
+      "title": "유O열 (70/M) CC. dyspnea",
+      "body": "유O열 (70/M) CC. dyspnea\nParatracheal stripe",
+      "notes": "23년 4월 21일 촬영한 CT입니다. Right upper paratracheal 쪽 lymph node가 커져있는 것을 확인할 수 있습니다.(metastatic lymphadenopathy) 2R",
+      "image": "radiology/img/slide_065.jpg",
+      "cats": [
+        "anatomy",
+        "case"
+      ]
+    },
+    {
+      "idx": 66,
+      "title": "Paratracheal stripe",
+      "body": "Rt. Paratracheal stripe thickening\n mesothelioma, malignant pleural thickening",
+      "notes": "Rt. Paratracheal strip (arrow)\nAzogos vein이 inferior margin을 형성 (arrow head)",
+      "image": "radiology/img/slide_066.jpg",
+      "cats": [
+        "anatomy"
+      ]
+    },
+    {
+      "idx": 67,
+      "title": "Aortopulmonary window",
+      "body": "Aortopulmonary window\nAP window LAP\nArea between the superior border of left pulmonary artery and the aortic arch.",
+      "notes": "",
+      "image": "radiology/img/slide_067.jpg",
+      "cats": [
+        "anatomy"
+      ]
+    },
+    {
+      "idx": 68,
+      "title": "Aortopulmonary window",
+      "body": "Aortopulmonary window",
+      "notes": "",
+      "image": "radiology/img/slide_068.jpg",
+      "cats": [
+        "anatomy"
+      ]
+    },
+    {
+      "idx": 69,
+      "title": "23:30:13 사진",
+      "body": "23:30:13 사진\n17/97 lung view\nPneumothorax",
+      "notes": "Rt. Lung apex level\nPneumothorax 관찰되며 rt. lung apex터 emphysematous change와 honeycombing 관찰된다 \nLt. lung에도 emphysematous chang와 GGO, consolidation 관찰됨",
+      "image": "radiology/img/slide_069.jpg",
+      "cats": [
+        "opacity",
+        "disease",
+        "pleural"
+      ]
+    },
+    {
+      "idx": 70,
+      "title": "23:30:13 사진",
+      "body": "23:30:13 사진\n17/97 lung view\nPneumothorax",
+      "notes": "Rt. Lung apex level\nPneumothorax 관찰되며 rt. lung apex터 emphysematous change와 honeycombing 관찰된다 \nLt. lung에도 emphysematous chang와 GGO, consolidation 관찰됨",
+      "image": "radiology/img/slide_070.jpg",
+      "cats": [
+        "opacity",
+        "disease",
+        "pleural"
+      ]
+    },
+    {
+      "idx": 71,
+      "title": "23:30:13 사진",
+      "body": "23:30:13 사진\n76/97 lung view\nPneumothorax",
+      "notes": "Lower lobe Basal level에서\n양측 폐 honeycombing 심하게 관찰됨",
+      "image": "radiology/img/slide_071.jpg",
+      "cats": [
+        "opacity",
+        "pleural"
+      ]
+    },
+    {
+      "idx": 72,
+      "title": "23:30:13 사진",
+      "body": "23:30:13 사진\n76/97 lung view\nPneumothorax",
+      "notes": "Lower lobe Basal level에서\n양측 폐 honeycombing 심하게 관찰됨",
+      "image": "radiology/img/slide_072.jpg",
+      "cats": [
+        "opacity",
+        "pleural"
+      ]
+    },
+    {
+      "idx": 73,
+      "title": "23:30:13 사진",
+      "body": "23:30:13 사진\n76/97 lung view\nPneumothorax",
+      "notes": "Lower lobe Basal level에서\n양측 폐 honeycombing 심하게 관찰됨",
+      "image": "radiology/img/slide_073.jpg",
+      "cats": [
+        "opacity",
+        "pleural"
+      ]
+    },
+    {
+      "idx": 74,
+      "title": "Lung nodule, hilar enlargement",
+      "body": "Lung nodule, hilar enlargement",
+      "notes": "",
+      "image": "radiology/img/slide_074.jpg",
+      "cats": [
+        "opacity",
+        "disease"
+      ]
+    },
+    {
+      "idx": 75,
+      "title": "#2 오O송(54/F)  CC. Lung mass",
+      "body": "#2 오O송(54/F)  CC. Lung mass\nLung nodule, hilar enlargement",
+      "notes": "",
+      "image": "radiology/img/slide_075.jpg",
+      "cats": [
+        "opacity",
+        "disease",
+        "case"
+      ]
+    },
+    {
+      "idx": 76,
+      "title": "#2 오O송(54/F)  CC. Lung mass",
+      "body": "#2 오O송(54/F)  CC. Lung mass\nLung nodule, hilar enlargement",
+      "notes": "",
+      "image": "radiology/img/slide_076.jpg",
+      "cats": [
+        "opacity",
+        "disease",
+        "case"
+      ]
+    },
+    {
+      "idx": 77,
+      "title": "Abnormal findings",
+      "body": "Abnormal findings\nReticular pattern\n(Reversed halo sign)\ncryptogenic organizing pneumonia\nfungal pneumonia (mucormycosis)",
+      "notes": "",
+      "image": "radiology/img/slide_077.jpg",
+      "cats": [
+        "intro",
+        "opacity",
+        "disease"
+      ]
+    },
+    {
+      "idx": 78,
+      "title": "Chest X-ray Quiz",
+      "body": "Chest X-ray Quiz\n1-10 cases",
+      "notes": "Hello \nThis is a chest X-ray Quiz \nI prepared 10 cases",
+      "image": null,
+      "cats": [
+        "case"
+      ]
+    },
+    {
+      "idx": 79,
+      "title": "#1. Normal chest PA",
+      "body": "Retrocardiac area: vascular marking",
+      "notes": "At first, I am gonna check the normal x ray\n\nI recommend you compare patient’s chest x ray with normal chest X ray",
+      "image": "radiology/img/slide_079.jpg",
+      "cats": [
+        "intro",
+        "anatomy"
+      ]
+    },
+    {
+      "idx": 80,
+      "title": "#2. Normal chest PA",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_080.jpg",
+      "cats": [
+        "intro",
+        "anatomy"
+      ]
+    },
+    {
+      "idx": 81,
+      "title": "1) 48/M",
+      "body": "",
+      "notes": "1393159  박영권",
+      "image": "radiology/img/slide_081.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 82,
+      "title": "1) 48/M",
+      "body": "Lobar pneumonia",
+      "notes": "1393159  박영권",
+      "image": "radiology/img/slide_082.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 83,
+      "title": "2) 68/M",
+      "body": "",
+      "notes": "1732117 조무행",
+      "image": "radiology/img/slide_083.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 84,
+      "title": "2) 68/M",
+      "body": "Pulmonary tuberculosis",
+      "notes": "1732117 조무행",
+      "image": "radiology/img/slide_084.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 85,
+      "title": "3) 80/F",
+      "body": "",
+      "notes": "862697  LLL Pneumonia",
+      "image": "radiology/img/slide_085.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 86,
+      "title": "3) 71/M",
+      "body": "Pneumonic consolidation, RLL",
+      "notes": "862697  LLL Pneumonia",
+      "image": "radiology/img/slide_086.jpg",
+      "cats": [
+        "opacity",
+        "disease"
+      ]
+    },
+    {
+      "idx": 87,
+      "title": "4) 84/M",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_087.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 88,
+      "title": "4) 84/M",
+      "body": "Emphysema, Pneumothorax",
+      "notes": "",
+      "image": "radiology/img/slide_088.jpg",
+      "cats": [
+        "disease",
+        "pleural"
+      ]
+    },
+    {
+      "idx": 89,
+      "title": "4) 84/M",
+      "body": "Emphysema, Pneumothorax",
+      "notes": "",
+      "image": "radiology/img/slide_089.jpg",
+      "cats": [
+        "disease",
+        "pleural"
+      ]
+    },
+    {
+      "idx": 90,
+      "title": "5) 88/F",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_090.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 91,
+      "title": "5) 88/F",
+      "body": "5) 88/F",
+      "notes": "",
+      "image": "radiology/img/slide_091.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 92,
+      "title": "5) 88/F",
+      "body": "5) 88/F\nPhantom tumor pleural effusion\nPericardial effusion",
+      "notes": "",
+      "image": "radiology/img/slide_092.jpg",
+      "cats": [
+        "pleural"
+      ]
+    },
+    {
+      "idx": 93,
+      "title": "6) 68/M (어려운 문제)",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_093.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 94,
+      "title": "6) 68/M",
+      "body": "Lung cancer",
+      "notes": "",
+      "image": "radiology/img/slide_094.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 95,
+      "title": "7) 71/M",
+      "body": "",
+      "notes": "임갑순 940889r/o septic pneumonia",
+      "image": "radiology/img/slide_095.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 96,
+      "title": "7) 71/M",
+      "body": "Bronchiectasis\nPneumonia",
+      "notes": "임갑순 940889r/o septic pneumonia",
+      "image": "radiology/img/slide_096.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 97,
+      "title": "8) 69/M",
+      "body": "",
+      "notes": "1998495  소상철 (",
+      "image": "radiology/img/slide_097.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 98,
+      "title": "8) 69/M",
+      "body": "Lung cancer",
+      "notes": "1998495  소상철 (",
+      "image": "radiology/img/slide_098.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 99,
+      "title": "9) 61/M",
+      "body": "",
+      "notes": "김장환 1428174",
+      "image": "radiology/img/slide_099.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 100,
+      "title": "9) 61/M",
+      "body": "Lung cancer",
+      "notes": "김장환 1428174",
+      "image": "radiology/img/slide_100.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 101,
+      "title": "10) 62/M",
+      "body": "",
+      "notes": "1. 1> Unchanged a 5.5 x 5 cm spiculated mass in LLL. with enchancement\u000b   - abutting to pleural surface, R/O visceral pleural invasion.\u000b   2> Enlarged LN at left hilar area (#63)\u000b   -  suspicous metastasis  \u000b   -> Consistent with primary lung cancer (T3, N1, M0).\u000b\u000b2. Unchanged;\u000b    1) Advanced pulmonary emphysema in both lungs.\u000b    2) A 0.7 cm subpleural nodule in RLL (#5/74),  probable benign.\u000b    3) Subpleural reticulation with some traction bronchiectasis in both lungs with basal predominancy, suggestive of interstitial lung abnormality\u000b\u000b3. Coronary stent in LAD.",
+      "image": "radiology/img/slide_101.jpg",
+      "cats": [
+        "opacity",
+        "disease"
+      ]
+    },
+    {
+      "idx": 102,
+      "title": "10) 62/M",
+      "body": "Lung cancer",
+      "notes": "1. 1> Unchanged a 5.5 x 5 cm spiculated mass in LLL. with enchancement\u000b   - abutting to pleural surface, R/O visceral pleural invasion.\u000b   2> Enlarged LN at left hilar area (#63)\u000b   -  suspicous metastasis  \u000b   -> Consistent with primary lung cancer (T3, N1, M0).\u000b\u000b2. Unchanged;\u000b    1) Advanced pulmonary emphysema in both lungs.\u000b    2) A 0.7 cm subpleural nodule in RLL (#5/74),  probable benign.\u000b    3) Subpleural reticulation with some traction bronchiectasis in both lungs with basal predominancy, suggestive of interstitial lung abnormality\u000b\u000b3. Coronary stent in LAD.",
+      "image": "radiology/img/slide_102.jpg",
+      "cats": [
+        "opacity",
+        "disease"
+      ]
+    },
+    {
+      "idx": 103,
+      "title": "10) 62/M",
+      "body": "Severe emphysema",
+      "notes": "",
+      "image": "radiology/img/slide_103.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 104,
+      "title": "Chest PA 확인할 때 유의사항",
+      "body": "1. 이상소견 있으면 old film과 비교\n2. 양측 lung 비교하기\n3. Retrocardiac area를 잘 보기\n4. Diaphragm margin 잘 보기\n5. Mediastinal widening 확인\n6. Apex쪽 다시 한번 확인\n7. 다시 한번 보기",
+      "notes": "",
+      "image": "radiology/img/slide_104.jpg",
+      "cats": [
+        "intro"
+      ]
+    },
+    {
+      "idx": 105,
+      "title": "Take Home messages",
+      "body": "1. 비결핵성 항산균 : RML, Lt. lingular segment- Bronchiectatic nodule\n2. 작은 (석회화) 결절 : benign nodule 가능성이 높음.\n3. 종괴와 혼동되는 혈관음영 : opacity 차이\n4. 종괴(mass)와 결절(nodule)의 차이 : 3cm 기준\n5. F/U할지, 조직검사를 해야 할지? Risk factor 고려\n6. CT 찍어야 할지, low dose, enhance로 찍을지? Lung cancer, PTE 감별 필요하면 enhance\n7. 놓치기 쉬운 병변: retrocardiac area mass, apex\n8. chest PA 촬영의 중요성: 과거 사진 비교, 청진",
+      "notes": "",
+      "image": null,
+      "cats": [
+        "intro",
+        "opacity",
+        "disease"
+      ]
+    },
+    {
+      "idx": 106,
+      "title": "Q&A",
+      "body": "retrocardiac marking 소실이라고 보려면 어느 정도나 음영이 증가해야 하는지 ?\n 심장 뒤쪽의 혈관 음영이 소실되어야 합니다.\n2. CXR에서는 CPA blunting이 보이는데 CT상에서 pleural effusion이 없으면 어떻게 해석 ?\n Pleural thickening(fibrosis) , pneumonia, mesothelioma 등\n3. mediastinum widening 측정 시 정확히 어디 부분을  측정해야 하는지 궁금합니다\n Chest PA에서 6cm 이상, Chest AP에서 8cm이상이면  mediastinal widening\n4. opacity와 haziness, consolidation  용어의 차이점 ?\nOpacity와 haziness는 거의 같은 의미.\nConsolidation은 병리학적으로 alveoli가 transudate 혹은 exudate로 꽉 차있는 상태.\n( 폐의 혈관 윤곽 소실될 정도의 opacity )",
+      "notes": "",
+      "image": null,
+      "cats": [
+        "intro",
+        "opacity",
+        "disease",
+        "pleural"
+      ]
+    },
+    {
+      "idx": 107,
+      "title": "Q&A",
+      "body": "5. 실루엣 사인 양성이려면 정확히 어느정도 소실되어야 양성 ?\n 경계가 불분명할 정도로 소실\n6. cavity와 cyst를 구분할 수 있는 정확한 차이점 ?\n Cavity가 wall 두껍고, cyst wall은 thin 합니다.\n7. 영상만 보면 의미있는 병변인지 Tb sequlae인지 구분할 수 있는지?\n사진만으로는 정확히 감별하기 어렵습니다. 하지만 cavity 및 주변에 nodular lesion,  tree in bud\nsign 이 있으면 active lesion일 가능성이 높고, calcification 및 fibrotic lesion만 있으면 old Tbc.\n8. 일단 haziness 증가해서 문제가 생겼다는 건 알겠는데 ILD 진단을 할 수 있는지요?\nChest PA 만으로는 어렵고 CT를 찍어야 하고 honeycomb 처럼 IPF의 전형적인 소견이 있으면\n그렇지 않고 diffuse GGO 등 애매한 병변있으면 CT로도 진단내리기 어렵습니다. 그래서 BAL 또는\nTBLB 또는 open lung biopsy를 합니다.",
+      "notes": "",
+      "image": null,
+      "cats": [
+        "intro",
+        "opacity",
+        "disease"
+      ]
+    },
+    {
+      "idx": 108,
+      "title": "Slide 108",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_108.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 109,
+      "title": "Chest X-ray Quiz",
+      "body": "Chest X-ray Quiz\n11-20 cases",
+      "notes": "",
+      "image": null,
+      "cats": [
+        "case"
+      ]
+    },
+    {
+      "idx": 110,
+      "title": "11) 54/M",
+      "body": "",
+      "notes": "1. LAP\u000b 1> Enlarged LNs in 4R/L, 7, 8R, 10R/L, 11R/L, 12R\u000b 2> Less than 1 cm sized small to borderline sized LNs in 1R/L, 2R, 5, 6\u000b :  Sarcoidosis\u000b    r/o lymphoproliferative disorder \u000b\u000b2. No mass or infiltration in either lung\u000b   Subsegmental atelectasis in RUL\u000b\u000b3. No pleural effusion or pneumothorax \u000b\u000b4. No definite abnormality in the scanned upper abdomen and bony thorax",
+      "image": "radiology/img/slide_110.jpg",
+      "cats": [
+        "volume",
+        "pleural"
+      ]
+    },
+    {
+      "idx": 111,
+      "title": "11) 54/M",
+      "body": "Sarcoidosis",
+      "notes": "1. LAP\u000b 1> Enlarged LNs in 4R/L, 7, 8R, 10R/L, 11R/L, 12R\u000b 2> Less than 1 cm sized small to borderline sized LNs in 1R/L, 2R, 5, 6\u000b :  Sarcoidosis\u000b    r/o lymphoproliferative disorder \u000b\u000b2. No mass or infiltration in either lung\u000b   Subsegmental atelectasis in RUL\u000b\u000b3. No pleural effusion or pneumothorax \u000b\u000b4. No definite abnormality in the scanned upper abdomen and bony thorax",
+      "image": "radiology/img/slide_111.jpg",
+      "cats": [
+        "volume",
+        "pleural"
+      ]
+    },
+    {
+      "idx": 112,
+      "title": "11) 54/M",
+      "body": "Sarcoidosis",
+      "notes": "",
+      "image": "radiology/img/slide_112.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 113,
+      "title": "12) 49/F",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_113.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 114,
+      "title": "12) 49/F",
+      "body": "r/o lung cancer, r/o Tuberculosis",
+      "notes": "",
+      "image": "radiology/img/slide_114.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 115,
+      "title": "13) 61/M",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_115.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 116,
+      "title": "13) 61/M",
+      "body": "RUL Mass, LAP Lung cancer",
+      "notes": "",
+      "image": "radiology/img/slide_116.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 117,
+      "title": "13) 61/M",
+      "body": "RUL Mass, LAP lung cancer",
+      "notes": "Lobulated contour of nodule at RUL apical segment\u000b   ; subtle increased size, 16.6-> 17.8 mm\u000b   ; looking inner cystic or necrotic portion\u000b\u000b     :  lung cancer, preliminary stage T3/4N3M1a\u000b       r/o inner cystic or necrotic benign inflammatory lesion\u000b\u000b\u000b- Another perivascular ill defined GGN at RUL posterior segment\u000b     ; no change\u000b      : r/o early maligancy of lung cancer\u000b\u000b- Another small nodules in RUL, RML and LLL\u000b       ; too smal to characterize and no change\u000b        :  metastasis\u000b            r/o granuloma\u000b- Mutiple LAPs at 2RL, 3A, 4R, 5\u000b     ; metastasis\u000b- No effusion RECOMMENDATION",
+      "image": "radiology/img/slide_117.jpg",
+      "cats": [
+        "opacity",
+        "disease",
+        "pleural"
+      ]
+    },
+    {
+      "idx": 118,
+      "title": "14) 82/M",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_118.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 119,
+      "title": "14) 82/M",
+      "body": "IPF",
+      "notes": "",
+      "image": "radiology/img/slide_119.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 120,
+      "title": "15) 73/M",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_120.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 121,
+      "title": "15) 73/M (Difficult)",
+      "body": "Silhouette sign (-)\n RLL Pneumonia",
+      "notes": "",
+      "image": "radiology/img/slide_121.jpg",
+      "cats": [
+        "anatomy",
+        "disease"
+      ]
+    },
+    {
+      "idx": 122,
+      "title": "16) 62/M",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_122.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 123,
+      "title": "16) 62/M",
+      "body": "Emphysema, giant bulla",
+      "notes": "",
+      "image": "radiology/img/slide_123.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 124,
+      "title": "17) 65/M",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_124.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 125,
+      "title": "17) 65/M",
+      "body": "Tooth or Broncholith with distal atelectasis",
+      "notes": "",
+      "image": "radiology/img/slide_125.jpg",
+      "cats": [
+        "volume"
+      ]
+    },
+    {
+      "idx": 126,
+      "title": "18) 75/F",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_126.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 127,
+      "title": "18) 75/F",
+      "body": "Bronchiectasis",
+      "notes": "",
+      "image": "radiology/img/slide_127.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 128,
+      "title": "19) 73/M",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_128.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 129,
+      "title": "19) 73/M",
+      "body": "Lung cancer",
+      "notes": "",
+      "image": "radiology/img/slide_129.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 130,
+      "title": "20) 73/M",
+      "body": "송O영 (85/M) CC. Dyspnea",
+      "notes": "# Aspiration pneumonia\n# r/o ILD aggravation\n\n# prerenal AKI\n# r/o delirium\n# r/o AD\n\n# HTN\n# lung ca \n   Lt. supraclavicular LAP : SCLC. [ES] T2b N2 r/oM1a \n   s/p #3) CARBO 60% ETOPO 60% ATEZOL 100% (2022.09.28)\n# IPF EMPHYSEMA",
+      "image": "radiology/img/slide_130.jpg",
+      "cats": [
+        "disease",
+        "case"
+      ]
+    },
+    {
+      "idx": 131,
+      "title": "20) 73/M",
+      "body": "송O영 (85/M) CC. Dyspnea\nLung cancer, emphysema, fibrotic lesion",
+      "notes": "small cell lung cancer in lateral basal segment of LLL\nGGO BLLZ에 보여\nCPA blunting – ild에 의해 pleural thickening?",
+      "image": "radiology/img/slide_131.jpg",
+      "cats": [
+        "opacity",
+        "disease",
+        "case"
+      ]
+    },
+    {
+      "idx": 132,
+      "title": "Chest PA 확인할 때 유의사항",
+      "body": "1. 이상소견 있으면 old film과 비교\n2. 양측 lung 비교하기\n3. Retrocardiac area를 잘 보기\n4. Diaphragm margin 잘 보기\n5. Mediastinal widening 확인\n6. Apex쪽 다시 한번 확인\n7. 다시 한번 보기",
+      "notes": "",
+      "image": "radiology/img/slide_132.jpg",
+      "cats": [
+        "intro"
+      ]
+    },
+    {
+      "idx": 133,
+      "title": "Slide 133",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_133.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 134,
+      "title": "Slide 134",
+      "body": "",
+      "notes": "",
+      "image": null,
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 135,
+      "title": "Take Home messages",
+      "body": "1. 비결핵성 항산균 : RML, Lt. lingular segment- Bronchiectatic nodule\n2. 작은 (석회화) 결절 : benign nodule 가능성이 높음.\n3. 종괴와 혼동되는 혈관음영 : opacity 차이\n4. 종괴(mass)와 결절(nodule)의 차이 : 3cm 기준\n5. F/U할지, 조직검사를 해야 할지? Risk factor 고려\n6. CT 찍어야 할지, low dose, enhance로 찍을지? Lung cancer, PTE 감별 필요하면 enhance\n7. 놓치기 쉬운 병변: retrocardiac area mass, apex\n8. chest PA 촬영의 중요성: 과거 사진 비교, 청진",
+      "notes": "",
+      "image": null,
+      "cats": [
+        "intro",
+        "opacity",
+        "disease"
+      ]
+    },
+    {
+      "idx": 136,
+      "title": "Slide 136",
+      "body": "",
+      "notes": "",
+      "image": null,
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 137,
+      "title": "Q&A",
+      "body": "retrocardiac marking 소실이라고 보려면 어느 정도나 음영이 증가해야 하는지 ?\n 심장 뒤쪽의 혈관 음영이 소실되어야 합니다.\n2. CXR에서는 CPA blunting이 보이는데 CT상에서 pleural effusion이 없으면 어떻게 해석 ?\n Pleural thickening(fibrosis) , pneumonia, mesothelioma 등\n3. mediastinum widening 측정 시 정확히 어디 부분을  측정해야 하는지 궁금합니다\n Chest PA에서 6cm 이상, Chest AP에서 8cm이상이면  mediastinal widening\n4. opacity와 haziness, consolidation  용어의 차이점 ?\nOpacity와 haziness는 거의 같은 의미.\nConsolidation은 병리학적으로 alveoli가 transudate 혹은 exudate로 꽉 차있는 상태.\n( 폐의 혈관 윤곽 소실될 정도의 opacity )",
+      "notes": "",
+      "image": null,
+      "cats": [
+        "intro",
+        "opacity",
+        "disease",
+        "pleural"
+      ]
+    },
+    {
+      "idx": 138,
+      "title": "Q&A",
+      "body": "5. 실루엣 사인 양성이려면 정확히 어느정도 소실되어야 양성 ?\n 경계가 불분명할 정도로 소실\n6. cavity와 cyst를 구분할 수 있는 정확한 차이점 ?\n Cavity가 wall 두껍고, cyst wall은 thin 합니다.\n7. 영상만 보면 의미있는 병변인지 Tb sequlae인지 구분할 수 있는지?\n사진만으로는 정확히 감별하기 어렵습니다. 하지만 cavity 및 주변에 noduler lesion,  tree in bud\nsign 이 있으면 active lesion일 가능성이 높고, calcification 및 fibrotic lesion만 있으면 old Tbc.\n8. 일단 haziness 증가해서 문제가 생겼다는 건 알겠는데 ILD 진단을 할 수 있는지요?\nChest PA 만으로는 어렵고 CT를 찍어야 하고 honeycomb 처럼 IPF의 전형적인 소견이 있으면\n그렇지 않고 diffuse GGO 등 애매한 병변있으면 CT로도 진단내리기 어렵습니다. 그래서 BAL 또는\nTBLB 또는 open lung biopsy를 합니다.",
+      "notes": "",
+      "image": null,
+      "cats": [
+        "intro",
+        "opacity",
+        "disease"
+      ]
+    },
+    {
+      "idx": 139,
+      "title": "Q&A",
+      "body": "9. Pleural effusion과 그냥 basal segment에 병변이 있는 것과의 차이를 어떻게 구분 ?\nDecubitus 를 찍어봅시다. Fluid Shifting 있으면 effusion 있는 거고 , shifting 없으면 loculated\neffusion일 수도 있고 pneumonia, fibrosis 등 병변일 수도 있습니다.\n10. Pneumothorax보는 법 : 폐혈관 구조가 보이지 않는 검은 음영이 pneumothorax\n11. Tracheal deviation이 어느정도가 되어야 deviation 되어 있다고 할 수 있는지 궁금.\n 중앙선에서 있으면 어쨌든  deviation 있는 겁니다.\n12. 폐포성 폐병변과 간질성 폐병변의 구별법이 궁금합니다\n구분하기 쉽지 않습니다. 두가지가 mix되어 있는 경우도 많습니다.\n정의상으론  alveolar opacity는  airspace가 fluid filling 병변이 보이는 것이고,\ninterstitial opacity는 alveoli 주변 간질(interlobular septum)의 음영이 증가된 것입니다.",
+      "notes": "",
+      "image": null,
+      "cats": [
+        "opacity",
+        "disease",
+        "pleural"
+      ]
+    },
+    {
+      "idx": 140,
+      "title": "Slide 140",
+      "body": "",
+      "notes": "",
+      "image": null,
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 141,
+      "title": "Slide 141",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_141.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 142,
+      "title": "Slide 142",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_142.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 143,
+      "title": "Slide 143",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_143.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 144,
+      "title": "Slide 144",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_144.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 145,
+      "title": "Slide 145",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_145.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 146,
+      "title": "Slide 146",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_146.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 147,
+      "title": "Hydrostatic pulmonary edema vs ARDS",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_147.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 148,
+      "title": "1473060 최순희 76/F 기흉",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_148.jpg",
+      "cats": [
+        "pleural"
+      ]
+    },
+    {
+      "idx": 149,
+      "title": "Slide 149",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_149.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 150,
+      "title": "Slide 150",
+      "body": "",
+      "notes": "",
+      "image": null,
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 151,
+      "title": "Slide 151",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_151.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 152,
+      "title": "Slide 152",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_152.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 153,
+      "title": "Slide 153",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_153.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 154,
+      "title": "Slide 154",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_154.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 155,
+      "title": "21) 73/F",
+      "body": "",
+      "notes": "",
+      "image": "radiology/img/slide_155.jpg",
+      "cats": [
+        "other"
+      ]
+    },
+    {
+      "idx": 156,
+      "title": "21) 73/F",
+      "body": "Bronchiectasis",
+      "notes": "",
+      "image": "radiology/img/slide_156.jpg",
+      "cats": [
+        "disease"
+      ]
+    },
+    {
+      "idx": 157,
+      "title": "21) 73/F",
+      "body": "Bronchiectasis",
+      "notes": "",
+      "image": "radiology/img/slide_157.jpg",
+      "cats": [
+        "disease"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "all",
+      "name": "전체",
+      "icon": "📚",
+      "patterns": []
+    },
+    {
+      "id": "intro",
+      "name": "판독 기초·용어",
+      "icon": "📖",
+      "patterns": [
+        "흉부 사진 판독",
+        "chest pa",
+        "chest lat",
+        "판독 용어",
+        "유의사항",
+        "abnormal findings",
+        "take home"
+      ]
+    },
+    {
+      "id": "anatomy",
+      "name": "정상 해부 / Sign",
+      "icon": "🫀",
+      "patterns": [
+        "normal chest",
+        "silhouette",
+        "aortopulmonary",
+        "paratracheal",
+        "secondary pulmonary lobule",
+        "air-bronchogram"
+      ]
+    },
+    {
+      "id": "opacity",
+      "name": "음영 종류 (Patterns)",
+      "icon": "🔍",
+      "patterns": [
+        "opacity",
+        "reticular",
+        "ggo",
+        "ground glass",
+        "consolidation",
+        "miliary",
+        "honeycomb",
+        "tree-in-bud",
+        "nodul"
+      ]
+    },
+    {
+      "id": "volume",
+      "name": "Lung volume / 무기폐",
+      "icon": "🌬️",
+      "patterns": [
+        "lung volume",
+        "hyperinflated",
+        "atelectasis",
+        "무기폐",
+        "hyperinflation"
+      ]
+    },
+    {
+      "id": "disease",
+      "name": "주요 질환",
+      "icon": "🦠",
+      "patterns": [
+        "ipf",
+        "emphysema",
+        "bulla",
+        "cavity",
+        "pneumonia",
+        "lung mass",
+        "lung cancer",
+        "lung nodule",
+        "pulmonary edema",
+        "ards",
+        "tuberculosis",
+        "tb",
+        "ntm",
+        "bronchiectasis"
+      ]
+    },
+    {
+      "id": "pleural",
+      "name": "흉수·기흉·기타",
+      "icon": "🩺",
+      "patterns": [
+        "effusion",
+        "air fluid",
+        "pneumothorax",
+        "loculated",
+        "hydrothorax",
+        "hemothorax",
+        "흉수",
+        "기흉"
+      ]
+    },
+    {
+      "id": "case",
+      "name": "Case 학습",
+      "icon": "🎯",
+      "patterns": [
+        "cc.",
+        "evaluation",
+        "dyspnea",
+        "/m)",
+        "/f)",
+        "case",
+        "quiz"
+      ]
+    },
+    {
+      "id": "other",
+      "name": "기타",
+      "icon": "📌",
+      "patterns": []
+    }
+  ]
+}

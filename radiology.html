@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>흉부 사진 판독 · 전공의 학습</title>
+  <meta name="description" content="흉부 X-ray 판독 학습 자료. 157장 슬라이드를 카테고리별로 학습하고 퀴즈 모드로 진단 능력 훈련." />
+  <meta name="theme-color" content="#1f4e79" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="assets/radiology.css" />
+</head>
+<body data-page="radiology">
+  <header class="site-header">
+    <a href="index.html" class="brand">호흡기 가이드라인 <small>v18 + 2026</small></a>
+    <nav>
+      <a href="index.html">홈</a>
+      <a href="summary.html">요약본</a>
+      <a href="manual.html">매뉴얼</a>
+      <a href="quiz.html">시험</a>
+      <a href="radiology.html" class="active">X-ray</a>
+    </nav>
+    <button class="header-search-btn" id="openSearchBtn" aria-label="검색">🔍</button>
+  </header>
+
+  <main class="rad-main">
+
+    <!-- 인트로 -->
+    <section class="rad-intro" id="radIntro">
+      <span class="version-tag">전공의 흉부 X-ray 학습</span>
+      <h1>흉부 사진 판독</h1>
+      <p class="lead">157장의 슬라이드와 142개의 X-ray 영상으로 구성된 판독 학습 자료입니다.<br>
+      카테고리별로 학습하거나, <strong>퀴즈 모드</strong>로 답을 숨기고 직접 진단해보세요.</p>
+
+      <!-- 필터 + 검색 -->
+      <div class="rad-filter">
+        <input type="search" id="radSearch" placeholder="🔎 슬라이드 검색 (제목·내용)" />
+        <div class="filter-actions">
+          <label class="switch quiz-mode-switch">
+            <input type="checkbox" id="quizMode" />
+            <span>🧠 퀴즈 모드 (답 숨기기)</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="cat-pills" id="catPills"></div>
+
+      <div class="rad-stats" id="radStats"></div>
+    </section>
+
+    <!-- 슬라이드 그리드 -->
+    <section class="rad-grid" id="slideGrid"></section>
+
+    <!-- 슬라이드 뷰어 (모달) -->
+    <div class="rad-viewer" id="radViewer" hidden>
+      <div class="viewer-overlay" id="viewerOverlay"></div>
+      <div class="viewer-content">
+        <button class="viewer-close" id="viewerClose">✕</button>
+        <button class="viewer-nav prev" id="viewerPrev" aria-label="이전 슬라이드">‹</button>
+        <button class="viewer-nav next" id="viewerNext" aria-label="다음 슬라이드">›</button>
+
+        <div class="viewer-image-wrap">
+          <img id="viewerImg" alt="" />
+          <div class="viewer-no-img" id="viewerNoImg" hidden>
+            <span>📄</span>
+            <p>이 슬라이드에는 이미지가 없습니다</p>
+          </div>
+        </div>
+
+        <div class="viewer-text">
+          <div class="viewer-meta">
+            <span class="viewer-idx" id="viewerIdx">— / —</span>
+            <span class="viewer-cats" id="viewerCats"></span>
+          </div>
+          <h2 id="viewerTitle">제목</h2>
+          <div class="viewer-body" id="viewerBody"></div>
+          <button class="reveal-btn" id="revealBtn" hidden>💡 정답·해설 보기</button>
+          <details class="viewer-notes" id="viewerNotesWrap" hidden>
+            <summary>📝 진단 / 강의 노트</summary>
+            <div id="viewerNotes"></div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    호흡기 내과 가이드라인 · v18 (2025.9) + 2026 보완 ·
+    <a href="index.html">홈으로</a>
+  </footer>
+
+  <script src="assets/radiology.js"></script>
+  <script src="assets/search.js" defer></script>
+</body>
+</html>
