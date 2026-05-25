@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>흉부 X-ray 진단 퀴즈 · 전공의 학습</title>
+  <meta name="description" content="흉부 X-ray 사진을 보고 진단 또는 소견을 맞추는 자가 퀴즈. 4지선다·다중선택·즉시 채점·오답노트." />
+  <meta name="theme-color" content="#1f4e79" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="assets/radiology.css" />
+  <link rel="stylesheet" href="assets/radiology-quiz.css" />
+</head>
+<body data-page="radiology-quiz">
+  <header class="site-header">
+    <a href="index.html" class="brand">호흡기 가이드라인 <small>v18 + 2026</small></a>
+    <nav>
+      <a href="index.html">홈</a>
+      <a href="summary.html">요약본</a>
+      <a href="manual.html">매뉴얼</a>
+      <a href="quiz.html">시험</a>
+      <a href="radiology.html" class="active">X-ray</a>
+    </nav>
+  </header>
+
+  <main class="rad-main">
+
+    <!-- 헤더 + 모드 탭 -->
+    <section class="rad-intro">
+      <span class="version-tag">흉부 사진 자가 퀴즈</span>
+      <h1>흉부 X-ray 진단 퀴즈</h1>
+
+      <div class="rad-mode-tabs">
+        <a class="mode-tab" href="radiology.html">📖 학습 모드</a>
+        <a class="mode-tab active" href="radiology-quiz.html">🎯 진단 퀴즈</a>
+      </div>
+    </section>
+
+    <!-- (1) 모드 선택 화면 -->
+    <section id="rq-select" class="rq-screen">
+      <div class="rq-mode-grid">
+        <button class="rq-mode-card" data-mode="dx">
+          <div class="rq-mode-icon">🩺</div>
+          <h3>진단 4지선다</h3>
+          <p>흉부 사진을 보고 가능한 4개의 진단 중 정답을 고르세요.</p>
+          <span class="rq-mode-meta" id="dxPoolMeta">— 문항 풀</span>
+        </button>
+        <button class="rq-mode-card" data-mode="finding">
+          <div class="rq-mode-icon">🔎</div>
+          <h3>소견 다중선택</h3>
+          <p>사진에서 보이는 모든 비정상 소견을 골라내세요. 부분 점수 인정.</p>
+          <span class="rq-mode-meta" id="findingPoolMeta">— 문항 풀</span>
+        </button>
+        <button class="rq-mode-card" data-mode="mix">
+          <div class="rq-mode-icon">🎲</div>
+          <h3>혼합 모드</h3>
+          <p>진단과 소견 문제가 무작위로 섞여서 출제됩니다.</p>
+          <span class="rq-mode-meta">진단 + 소견</span>
+        </button>
+      </div>
+
+      <div class="rq-options">
+        <div class="rq-opt-row">
+          <label>📊 문항 수
+            <select id="qCount">
+              <option value="5">5문항</option>
+              <option value="10" selected>10문항</option>
+              <option value="20">20문항</option>
+            </select>
+          </label>
+          <label class="switch">
+            <input type="checkbox" id="immediateToggle" checked />
+            <span>💡 각 문제 즉시 정답·해설 공개</span>
+          </label>
+        </div>
+        <p class="rq-note">
+          ※ 익명으로 작동하며, 진행 데이터는 본인 기기(localStorage)에만 저장됩니다.<br>
+          최근 점수: <span id="recentScores">없음</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- (2) 퀴즈 진행 화면 -->
+    <section id="rq-quiz" class="rq-screen" hidden>
+      <div class="rq-progress-bar">
+        <div class="rq-progress-info">
+          <span class="rq-badge" id="rqBadge">진단</span>
+          <span id="rqIndex">1 / 10</span>
+        </div>
+        <div class="rq-progress-track"><div id="rqProgressFill"></div></div>
+      </div>
+
+      <div class="rq-question-card">
+        <div class="rq-image-wrap">
+          <img id="rqImg" alt="흉부 X-ray" />
+          <button class="rq-zoom-btn" id="rqZoomBtn" title="확대">🔍</button>
+        </div>
+
+        <div class="rq-question-body">
+          <p class="rq-prompt" id="rqPrompt">이 흉부 사진에서 가장 적절한 진단은?</p>
+          <ul id="rqChoices" class="rq-choices"></ul>
+
+          <div id="rqExplain" class="rq-explain" hidden>
+            <div class="rq-result-line">
+              <span id="rqVerdict"></span>
+              <span id="rqAnswerLine"></span>
+            </div>
+            <div class="rq-explain-text" id="rqExplainText"></div>
+            <details class="rq-source-detail" id="rqSourceDetail" hidden>
+              <summary>📚 원본 슬라이드 보기</summary>
+              <div id="rqSourceBody"></div>
+            </details>
+          </div>
+
+          <div class="rq-actions">
+            <button id="rqSubmitBtn" class="btn-primary" disabled>제출</button>
+            <button id="rqNextBtn" class="btn-primary" hidden>다음 →</button>
+            <button id="rqExitBtn" class="btn-secondary">중단</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- (3) 결과 화면 -->
+    <section id="rq-result" class="rq-screen" hidden>
+      <div class="rq-result-hero">
+        <div id="rqResultEmoji" class="rq-result-emoji">🎉</div>
+        <h2 id="rqResultScore">8 / 10</h2>
+        <p id="rqResultMessage" class="lead">잘했어요!</p>
+        <p class="rq-result-meta">
+          <span id="rqResultMode">진단 모드</span> ·
+          <span id="rqResultTime">2:34</span>
+        </p>
+      </div>
+
+      <div class="rq-result-actions">
+        <button id="rqRetryBtn" class="btn-primary">🔁 다시 풀기 (같은 모드)</button>
+        <button id="rqWrongOnlyBtn" class="btn-secondary" hidden>📝 틀린 문항 다시 보기</button>
+        <button id="rqHomeBtn" class="btn-secondary">처음으로</button>
+      </div>
+
+      <div class="rq-wrong-notes" id="rqWrongNotes" hidden>
+        <h3>📝 오답 노트</h3>
+        <div id="rqWrongList"></div>
+      </div>
+    </section>
+
+    <!-- 이미지 확대 모달 -->
+    <div class="rq-zoom-modal" id="rqZoomModal" hidden>
+      <div class="rq-zoom-overlay"></div>
+      <img id="rqZoomImg" alt="" />
+      <button class="rq-zoom-close" id="rqZoomClose">✕</button>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    호흡기 내과 가이드라인 · v18 (2025.9) + 2026 보완 ·
+    <a href="index.html">홈으로</a>
+  </footer>
+
+  <script src="assets/radiology-quiz.js"></script>
+</body>
+</html>

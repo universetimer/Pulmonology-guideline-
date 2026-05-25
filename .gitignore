@@ -1,33 +1,29 @@
+# 25MB 초과 - Cloudflare Pages 한도 (GitHub Release로 별도 업로드)
+# Local-only
+# Node (in case we add tooling later)
 # OS / Editor
-.DS_Store
-Thumbs.db
-Desktop.ini
-*.swp
-.idea/
-.vscode/
-
 # Python (build scripts)
-__pycache__/
+# Radiology - 사용하지 않는 raw / 중간 결과물 (사이트는 radiology/img/ 만 사용)
+*.log
 *.pyc
 *.pyo
-.venv/
-venv/
-
-# Node (in case we add tooling later)
-node_modules/
-.wrangler/
-
-# Local-only
-*.log
+*.swp
+.DS_Store
 .env
 .env.local
-
-# 25MB 초과 - Cloudflare Pages 한도 (GitHub Release로 별도 업로드)
-files/manual-v18-with-2026-supplement.docx
-files/*.docx
-
-# Radiology - 사용하지 않는 raw / 중간 결과물 (사이트는 radiology/img/ 만 사용)
-radiology/_raw/
-radiology/img-v2/
+.idea/
+.venv/
+.vscode/
+.wrangler/
+Desktop.ini
+Thumbs.db
+__pycache__/
 assets/radiology_full.json
 downloads/
+files/*.docx
+files/manual-v18-with-2026-supplement.docx
+node_modules/
+radiology/_raw/
+radiology/embedded/
+radiology/img/
+venv/

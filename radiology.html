@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>흉부 사진 판독 · 전공의 학습</title>
-  <meta name="description" content="흉부 X-ray 판독 학습 자료. 157장 슬라이드를 카테고리별로 학습하고 퀴즈 모드로 진단 능력 훈련." />
+  <meta name="description" content="흉부 X-ray 판독 학습 자료. 280여 장 슬라이드 + 진단/소견 퀴즈로 판독 능력 훈련." />
   <meta name="theme-color" content="#1f4e79" />
   <link rel="preconnect" href="https://cdn.jsdelivr.net" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
@@ -30,8 +30,13 @@
     <section class="rad-intro" id="radIntro">
       <span class="version-tag">전공의 흉부 X-ray 학습</span>
       <h1>흉부 사진 판독</h1>
-      <p class="lead">157장의 슬라이드와 142개의 X-ray 영상으로 구성된 판독 학습 자료입니다.<br>
-      카테고리별로 학습하거나, <strong>퀴즈 모드</strong>로 답을 숨기고 직접 진단해보세요.</p>
+      <p class="lead" id="radLead">로딩 중...</p>
+
+      <!-- 진입점: 학습 / 퀴즈 -->
+      <div class="rad-mode-tabs">
+        <a class="mode-tab active" href="radiology.html">📖 학습 모드</a>
+        <a class="mode-tab" href="radiology-quiz.html">🎯 진단 퀴즈</a>
+      </div>
 
       <!-- 필터 + 검색 -->
       <div class="rad-filter">
@@ -39,11 +44,15 @@
         <div class="filter-actions">
           <label class="switch quiz-mode-switch">
             <input type="checkbox" id="quizMode" />
-            <span>🧠 퀴즈 모드 (답 숨기기)</span>
+            <span>🧠 답 숨기기 (셀프 퀴즈)</span>
           </label>
         </div>
       </div>
 
+      <!-- 출처 필터 -->
+      <div class="source-filter" id="sourceFilter"></div>
+
+      <!-- 카테고리 핍 -->
       <div class="cat-pills" id="catPills"></div>
 
       <div class="rad-stats" id="radStats"></div>
@@ -66,13 +75,15 @@
             <span>📄</span>
             <p>이 슬라이드에는 이미지가 없습니다</p>
           </div>
+          <div class="viewer-thumbs" id="viewerThumbs"></div>
         </div>
 
         <div class="viewer-text">
           <div class="viewer-meta">
             <span class="viewer-idx" id="viewerIdx">— / —</span>
-            <span class="viewer-cats" id="viewerCats"></span>
+            <span class="viewer-source" id="viewerSource"></span>
           </div>
+          <div class="viewer-tags" id="viewerTags"></div>
           <h2 id="viewerTitle">제목</h2>
           <div class="viewer-body" id="viewerBody"></div>
           <button class="reveal-btn" id="revealBtn" hidden>💡 정답·해설 보기</button>

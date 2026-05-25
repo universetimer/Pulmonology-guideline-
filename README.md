@@ -4,6 +4,8 @@
 
 - **요약본 (2026)** — 25개 토픽 핵심 요약 (Quick Reference)
 - **매뉴얼 전체** — v18 매뉴얼 원문 + 보완 챕터 (COPD 2024, 천식 2022, 결핵 5판, 폐고혈압 2020, ILD 2023, 폐암 2026 등)
+- **흉부 X-ray 학습 (`radiology.html`)** — 3개 강의자료 통합. 사진+설명이 함께 있는 78장만 선별. 출처·카테고리 필터, 다중 이미지 갤러리, 셀프 퀴즈 모드.
+- **흉부 X-ray 진단 퀴즈 (`radiology-quiz.html`)** — 진단 4지선다 + 소견 다중선택(F1 부분점수). 즉시 채점·오답노트·localStorage 점수 기록.
 
 ## 구조
 
@@ -14,6 +16,9 @@ respiratory-guideline/      # Cloudflare Pages가 그대로 deploy
 ├── summary.html            # 요약본 (2026)
 ├── assets/                 # CSS, JS, TOC JSON
 ├── images/                 # 매뉴얼 추출 이미지 (~36MB)
+├── radiology/img-v2/       # X-ray 슬라이드 이미지 (~12MB, 147장)
+├── radiology.html          # X-ray 학습 페이지
+├── radiology-quiz.html     # X-ray 진단·소견 자가 퀴즈
 ├── downloads/              # 작은 다운로드 파일
 │   └── summary-2026.docx   (≈ 76 KB)
 ├── _headers                # Cloudflare 헤더 (캐시·보안)
