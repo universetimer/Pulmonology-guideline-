@@ -1,0 +1,9 @@
+# 텍스트 파일 LF 통일
+* text=auto eol=lf
+
+# 바이너리는 LFS 사용 안 하고 그냥 push (GitHub 100MB 제한 내)
+*.docx binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary

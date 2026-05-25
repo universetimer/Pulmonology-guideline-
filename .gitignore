@@ -1,0 +1,27 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+.idea/
+.vscode/
+
+# Python (build scripts)
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Node (in case we add tooling later)
+node_modules/
+.wrangler/
+
+# Local-only
+*.log
+.env
+.env.local
+
+# 25MB 초과 - Cloudflare Pages 한도 (GitHub Release로 별도 업로드)
+files/manual-v18-with-2026-supplement.docx
+files/*.docx
