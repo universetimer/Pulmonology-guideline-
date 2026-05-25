@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>호흡기 시험 · 전공의 자가평가</title>
+  <meta name="description" content="호흡기 내과 전공의·인턴을 위한 자가평가 시험. 6개 분야별 랜덤 10문제, 즉시 채점, 백분위·강약점 분석." />
+  <meta name="theme-color" content="#1f4e79" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="assets/quiz.css" />
+</head>
+<body data-page="quiz">
+  <header class="site-header">
+    <a href="index.html" class="brand">호흡기 가이드라인 <small>v18 + 2026</small></a>
+    <nav>
+      <a href="index.html">홈</a>
+      <a href="summary.html">요약본</a>
+      <a href="manual.html">매뉴얼</a>
+      <a href="quiz.html" class="active">시험</a>
+    </nav>
+  </header>
+
+  <main class="quiz-main">
+    <!-- 1. 분야 선택 화면 -->
+    <section id="screen-select" class="quiz-screen">
+      <div class="quiz-hero">
+        <span class="version-tag">전공의 자가평가</span>
+        <h1>호흡기 내과 시험</h1>
+        <p class="lead">분야를 선택하면 무작위 10문제가 출제됩니다.<br>
+          즉시 채점되며, 전체 응시자 대비 본인의 백분위와 강약점을 확인할 수 있습니다.</p>
+      </div>
+
+      <div class="category-grid" id="categoryGrid"></div>
+
+      <div class="quiz-options">
+        <label class="switch">
+          <input type="checkbox" id="timerToggle" />
+          <span>⏱️ 시간 제한 (10분)</span>
+        </label>
+        <label class="switch">
+          <input type="checkbox" id="immediateToggle" checked />
+          <span>💡 각 문제 즉시 정답·해설 공개</span>
+        </label>
+      </div>
+
+      <div class="quiz-stats-box" id="categoryStats">
+        <h3>📊 전체 응시 통계 (실시간)</h3>
+        <div id="globalStats" class="stats-row">통계 로딩 중...</div>
+      </div>
+    </section>
+
+    <!-- 2. 시험 진행 화면 -->
+    <section id="screen-quiz" class="quiz-screen" hidden>
+      <div class="quiz-progress-bar">
+        <div class="progress-info">
+          <span id="catBadge" class="cat-badge"></span>
+          <span id="qIndex">1 / 10</span>
+          <span id="timerDisplay" hidden>⏱️ <span id="timerValue">10:00</span></span>
+        </div>
+        <div class="progress-track"><div id="progressFill"></div></div>
+      </div>
+
+      <div class="question-card">
+        <h2 id="questionText"></h2>
+        <ul id="choicesList" class="choices"></ul>
+        <div id="explanationBox" class="explanation" hidden></div>
+        <div class="quiz-actions">
+          <button id="nextBtn" class="btn-primary" disabled>다음 →</button>
+          <button id="exitBtn" class="btn-secondary">중단</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 결과 화면 -->
+    <section id="screen-result" class="quiz-screen" hidden>
+      <div class="result-hero">
+        <div id="resultEmoji" class="result-emoji">🎉</div>
+        <h1 id="resultScore">9 / 10</h1>
+        <p id="resultMessage" class="lead">훌륭합니다!</p>
+        <div class="result-meta">
+          <span>⏱️ <span id="resultTime">2:34</span></span>
+          <span>📚 <span id="resultCategory">호흡기 일반</span></span>
+        </div>
+      </div>
+
+      <div class="result-percentile">
+        <h3>전체 응시자 대비 위치</h3>
+        <div class="percentile-bar">
+          <div id="percentileFill" class="percentile-fill"></div>
+          <div id="percentileLabel" class="percentile-label">상위 -%</div>
+        </div>
+        <p class="percentile-info" id="percentileInfo">
+          전체 N명 응시 · 평균 -점
+        </p>
+      </div>
+
+      <div id="radarSection" class="result-radar" hidden>
+        <h3>📡 분야별 강약점</h3>
+        <canvas id="radarChart" width="400" height="400"></canvas>
+      </div>
+
+      <div class="result-review">
+        <h3>📝 문제 리뷰</h3>
+        <div id="reviewList"></div>
+      </div>
+
+      <div class="result-actions">
+        <button id="retryWrongBtn" class="btn-primary">🔁 틀린 문제만 다시 풀기</button>
+        <button id="retryAllBtn" class="btn-secondary">🔄 같은 분야 다시 풀기</button>
+        <button id="newCatBtn" class="btn-secondary">📚 다른 분야 선택</button>
+        <a href="index.html" class="btn-secondary">🏠 홈으로</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    호흡기 내과 가이드라인 · v18 (2025.9) + 2026 보완 ·
+    <a href="index.html">홈으로</a>
+  </footer>
+
+  <script src="assets/quiz.js"></script>
+</body>
+</html>

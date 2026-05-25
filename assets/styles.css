@@ -279,6 +279,17 @@ main.content {
 .cta-card .badge { display: inline-block; padding: 2px 8px; background: var(--bg-soft); border-radius: 10px; font-size: 11px; color: var(--text-muted); margin-bottom: 8px; font-weight: 600; letter-spacing: 0.3px; }
 .cta-card .arrow { color: var(--primary); font-weight: 700; margin-top: 12px; display: inline-block; }
 
+/* Quiz CTA card emphasis */
+.cta-card.cta-quiz {
+  border-color: #c00000;
+  background: linear-gradient(135deg, var(--bg-card), rgba(192, 0, 0, 0.04));
+  grid-column: 1 / -1;
+  border-width: 2px;
+}
+.cta-card.cta-quiz:hover { box-shadow: 0 6px 24px rgba(192, 0, 0, 0.18); border-color: #c00000; }
+.cta-card.cta-quiz h3 { color: #c00000; font-size: 20px; }
+.cta-card.cta-quiz .arrow { color: #c00000; }
+
 .landing-section {
   max-width: 900px;
   margin: 48px auto;
