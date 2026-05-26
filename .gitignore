@@ -26,4 +26,5 @@ node_modules/
 radiology/_raw/
 radiology/embedded/
 radiology/img/
+radiology/img-v2-backup/
 venv/
