@@ -628,109 +628,130 @@ header.site-header nav a.nav-youtube:hover {
 
 .yt-section {
   max-width: 1100px;
-  margin: 40px auto 16px;
-  padding: 32px 24px;
-  background: linear-gradient(135deg, var(--bg-soft), var(--bg-card));
-  border: 1.5px solid var(--border);
-  border-radius: 14px;
+  margin: 48px auto 24px;
+  padding: 40px 32px;
+  background:
+    radial-gradient(circle at top right, rgba(255, 0, 0, 0.08), transparent 60%),
+    linear-gradient(180deg, var(--bg-card), var(--bg-soft));
+  border: 1px solid var(--border);
+  border-radius: 18px;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.04);
 }
 .yt-section::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #ff0000, #ff5050, #ff0000);
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #ff0000, #ff5050, #ff0000, transparent);
 }
 
+/* 헤더: 중앙 정렬 + 큰 로고 + 한 줄 정렬 */
 .yt-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  gap: 16px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
+  text-align: center;
+  gap: 14px;
+  margin-bottom: 28px;
 }
 .yt-header-left {
   display: flex;
   align-items: center;
   gap: 14px;
+  flex-direction: column;
 }
 .yt-logo {
   background: #ff0000;
   color: #fff;
-  width: 52px;
-  height: 52px;
-  border-radius: 12px;
+  width: 62px;
+  height: 62px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 800;
   flex-shrink: 0;
-  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.25);
+  box-shadow: 0 6px 16px rgba(255, 0, 0, 0.3);
+  transform: rotate(-2deg);
+  transition: transform .25s;
 }
+.yt-section:hover .yt-logo { transform: rotate(0deg) scale(1.05); }
+
 .yt-header h2 {
-  margin: 0 0 2px;
+  margin: 0;
   color: var(--text);
-  font-size: 19px;
+  font-size: 22px;
   line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: -0.3px;
 }
-.yt-header h2 strong { color: #ff0000; }
+.yt-header h2 strong { color: #ff0000; font-weight: 800; }
 .yt-header p {
   margin: 0;
   color: var(--text-muted);
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 1.55;
+  max-width: 480px;
 }
 
 .yt-subscribe-btn {
   background: #ff0000;
   color: #fff !important;
-  padding: 9px 18px;
-  border-radius: 22px;
+  padding: 11px 24px;
+  border-radius: 28px;
   font-weight: 700;
-  font-size: 14px;
-  text-decoration: none;
-  transition: all .15s;
-  box-shadow: 0 2px 8px rgba(255,0,0,0.25);
+  font-size: 14.5px;
+  text-decoration: none !important;
+  transition: all .2s;
+  box-shadow: 0 4px 14px rgba(255,0,0,0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
 }
 .yt-subscribe-btn:hover {
   background: #c00;
-  text-decoration: none;
-  transform: scale(1.05);
-  box-shadow: 0 4px 14px rgba(255,0,0,0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255,0,0,0.4);
 }
 
+/* 그리드: 명시적 4열·중앙 정렬, 좁아지면 자동 줄어듦 */
 .yt-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  justify-content: center;
 }
+@media (max-width: 980px) { .yt-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 760px) { .yt-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; } }
+@media (max-width: 440px) { .yt-grid { grid-template-columns: 1fr; gap: 12px; } }
+
 .yt-loading,
 .yt-fallback {
   grid-column: 1 / -1;
   text-align: center;
-  padding: 30px;
+  padding: 40px;
   color: var(--text-muted);
 }
 
 .yt-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
   text-decoration: none !important;
   color: inherit;
   display: flex;
   flex-direction: column;
-  transition: all .15s;
+  transition: all .2s ease;
 }
 .yt-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-  border-color: #ff0000;
-  text-decoration: none;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+  border-color: rgba(255,0,0,0.5);
 }
 .yt-thumb {
   position: relative;
@@ -742,11 +763,10 @@ header.site-header nav a.nav-youtube:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform .25s;
+  transition: transform .3s ease;
 }
-.yt-card:hover .yt-thumb img {
-  transform: scale(1.05);
-}
+.yt-card:hover .yt-thumb img { transform: scale(1.06); }
+
 .yt-duration {
   position: absolute;
   bottom: 6px;
@@ -754,7 +774,7 @@ header.site-header nav a.nav-youtube:hover {
   background: rgba(0,0,0,0.85);
   color: #fff;
   font-size: 11px;
-  padding: 2px 6px;
+  padding: 2px 7px;
   border-radius: 3px;
   font-weight: 600;
 }
@@ -762,73 +782,225 @@ header.site-header nav a.nav-youtube:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
-  background: rgba(255, 0, 0, 0.9);
+  transform: translate(-50%, -50%) scale(0.85);
+  width: 56px;
+  height: 56px;
+  background: rgba(255, 0, 0, 0.92);
   color: #fff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 22px;
+  padding-left: 4px;
   opacity: 0;
-  transition: opacity .2s;
+  transition: all .25s ease;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.4);
 }
-.yt-card:hover .yt-play {
-  opacity: 1;
-}
+.yt-card:hover .yt-play { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+
 .yt-meta {
-  padding: 10px 12px;
+  padding: 12px 14px 14px;
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
 }
 .yt-title {
-  font-size: 13.5px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--text);
-  line-height: 1.4;
+  line-height: 1.45;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  min-height: 2.9em;
 }
 .yt-sub {
   font-size: 11.5px;
   color: var(--text-muted);
   margin-top: auto;
+  display: flex;
+  gap: 4px;
+  align-items: center;
 }
-.yt-sub span { margin-right: 4px; }
+.yt-sub span { white-space: nowrap; }
 
 .yt-more {
-  margin-top: 22px;
+  margin-top: 28px;
   text-align: center;
 }
 .yt-more-btn {
   display: inline-block;
-  background: var(--bg-card);
+  background: transparent;
   border: 1.5px solid #ff0000;
   color: #ff0000 !important;
-  padding: 10px 24px;
-  border-radius: 22px;
+  padding: 11px 28px;
+  border-radius: 28px;
   font-weight: 600;
   font-size: 14px;
   text-decoration: none !important;
-  transition: all .15s;
+  transition: all .2s;
 }
 .yt-more-btn:hover {
   background: #ff0000;
   color: #fff !important;
-  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(255,0,0,0.25);
 }
 
 @media (max-width: 600px) {
-  .yt-section { padding: 20px 14px; margin: 24px 12px; }
-  .yt-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-  .yt-title { font-size: 12.5px; }
-  .yt-logo { width: 40px; height: 40px; font-size: 18px; }
-  .yt-header h2 { font-size: 16px; }
-  .yt-subscribe-btn { padding: 7px 14px; font-size: 13px; }
+  .yt-section {
+    padding: 26px 18px;
+    margin: 28px 12px;
+    border-radius: 14px;
+  }
+  .yt-header h2 { font-size: 18px; }
+  .yt-header p { font-size: 13px; }
+  .yt-logo { width: 52px; height: 52px; font-size: 22px; border-radius: 14px; }
+  .yt-subscribe-btn { padding: 9px 20px; font-size: 13.5px; }
+  .yt-title { font-size: 13px; }
+}
+
+/* ============ Shorts 캐러셀 ============ */
+.yt-shorts-wrap { margin-bottom: 28px; }
+.yt-section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 12px;
+  padding: 0 4px;
+}
+.yt-section-head h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.2px;
+}
+.yt-section-more {
+  font-size: 13px;
+  color: #ff0000;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.yt-section-more:hover { text-decoration: underline; }
+
+.yt-shorts-carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 160px;
+  gap: 12px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 4px 14px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: #ff5050 transparent;
+}
+.yt-shorts-carousel::-webkit-scrollbar { height: 8px; }
+.yt-shorts-carousel::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #ff0000, #ff5050);
+  border-radius: 4px;
+}
+.yt-shorts-carousel::-webkit-scrollbar-track { background: transparent; }
+
+.yt-short-card {
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  transition: all .18s;
+}
+.yt-short-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255,0,0,0.18);
+  border-color: #ff5050;
+}
+.yt-short-thumb {
+  position: relative;
+  aspect-ratio: 9 / 16;
+  background: #0a0a0a;
+  overflow: hidden;
+}
+.yt-short-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.yt-short-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255,0,0,0.92);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity .18s;
+  pointer-events: none;
+}
+.yt-short-card:hover .yt-short-play { opacity: 1; }
+.yt-short-badge {
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
+  background: rgba(0,0,0,0.78);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 8px;
+  letter-spacing: 0.3px;
+}
+.yt-short-meta {
+  padding: 8px 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.yt-short-title {
+  font-size: 12.5px;
+  line-height: 1.35;
+  font-weight: 600;
+  color: var(--text);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.yt-short-views {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: auto;
+}
+
+/* 강의 영상 (longform) — 일반 영상 4개를 보조로 */
+.yt-longform-wrap { margin-top: 8px; }
+.yt-longform-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+@media (max-width: 880px) { .yt-longform-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .yt-longform-grid { grid-template-columns: 1fr; } }
+
+@media (max-width: 600px) {
+  .yt-shorts-carousel { grid-auto-columns: 138px; gap: 10px; }
+  .yt-short-title { font-size: 12px; }
 }
