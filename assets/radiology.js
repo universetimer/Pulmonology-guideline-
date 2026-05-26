@@ -17,7 +17,7 @@
 
   // ---------- load ----------
   // 빌드 버전 — 데이터 갱신 시 이 값을 올리면 클라이언트가 새 JSON 강제 fetch
-  const DATA_VERSION = '20260526-3';
+  const DATA_VERSION = '20260527-1';
   async function load() {
     try {
       const res = await fetch(`assets/radiology.json?v=${DATA_VERSION}`, { cache: 'no-cache' });
@@ -162,7 +162,7 @@
           return cat ? `<span class="mini-badge" title="${cat.name}">${cat.icon}</span>` : '';
         }).join('');
       const dxBadge = (!STATE.quizMode && sl.dx_label)
-        ? `<span class="card-dx" title="${escapeHtml(sl.dx_label)}">🩺 ${escapeHtml(sl.dx_label.replace(/\s*\(.*\)/, ''))}</span>`
+        ? `<span class="card-dx" data-dx="${escapeHtml(sl.dx || '')}" title="${escapeHtml(sl.dx_label)}">🩺 ${escapeHtml(sl.dx_label.replace(/\s*\(.*\)/, ''))}</span>`
         : '';
       info.innerHTML = `
         <div class="num">#${String(sl.idx).padStart(3, '0')} · ${escapeHtml(sl.source_label || '')}</div>

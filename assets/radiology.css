@@ -9,17 +9,24 @@
   margin-bottom: 24px;
 }
 .rad-intro h1 {
-  font-size: 30px;
+  font-size: 32px;
   color: var(--primary);
-  margin: 8px 0 12px;
+  margin: 8px 0 14px;
+  letter-spacing: -0.6px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .rad-intro .lead {
   color: var(--text-muted);
   font-size: 15px;
-  line-height: 1.7;
-  max-width: 700px;
-  margin: 0 auto 20px;
+  line-height: 1.75;
+  max-width: 720px;
+  margin: 0 auto 24px;
 }
+.rad-intro .lead strong { color: var(--primary); font-weight: 700; }
 
 /* search + filter row */
 .rad-filter {
@@ -105,18 +112,28 @@
 .slide-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
-  transition: all .15s;
+  transition: transform .18s cubic-bezier(.2,.7,.2,1), box-shadow .18s, border-color .18s;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.slide-card::after {
+  content: '';
+  position: absolute; inset: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 0 0 rgba(31,78,121,0);
+  pointer-events: none;
+  transition: box-shadow .18s;
 }
 .slide-card:hover {
   border-color: var(--primary);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.10);
+  transform: translateY(-3px);
 }
+.slide-card:hover::after { box-shadow: 0 0 0 3px rgba(31,78,121,0.10); }
 .slide-card .thumb {
   background: #1a1a1a;
   aspect-ratio: 4 / 3;
@@ -187,6 +204,20 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+/* 진단별 색상 분기 (data-dx로) */
+.slide-card .card-dx[data-dx="lung_cancer"]   { background:#fde6e6; color:#c00; border-color:#f5b5b5; }
+.slide-card .card-dx[data-dx="tb"]            { background:#fff1d6; color:#a05a00; border-color:#f0c98f; }
+.slide-card .card-dx[data-dx="ntm"]           { background:#fff5e0; color:#8a5800; border-color:#f0d59e; }
+.slide-card .card-dx[data-dx="pneumonia"]     { background:#e7f1ff; color:#1858b8; border-color:#a8c3eb; }
+.slide-card .card-dx[data-dx="copd"]          { background:#e8f0e7; color:#2e6e3a; border-color:#b1d1ad; }
+.slide-card .card-dx[data-dx="asthma"]        { background:#eef7e6; color:#3a7a1f; border-color:#bcd9a4; }
+.slide-card .card-dx[data-dx="ild"]           { background:#f0e6f7; color:#6b2796; border-color:#cfb5e0; }
+.slide-card .card-dx[data-dx="pneumothorax"]  { background:#dffaf3; color:#0a7656; border-color:#9ee0cc; }
+.slide-card .card-dx[data-dx="pleural_effusion"]{background:#e0f4fb; color:#0a637a; border-color:#9fd8e7; }
+.slide-card .card-dx[data-dx="bronchiectasis"]{ background:#fdebef; color:#a51b46; border-color:#eeb7c5; }
+.slide-card .card-dx[data-dx="ards"]          { background:#fff0eb; color:#9a3a13; border-color:#f0b9a6; }
+.slide-card .card-dx[data-dx="pe"]            { background:#fbeae8; color:#9a2b1f; border-color:#edb1a9; }
+.slide-card .card-dx[data-dx="hf"]            { background:#ffe9f0; color:#a3174c; border-color:#f3aac0; }
 
 /* ---------- Viewer (modal) ---------- */
 .rad-viewer[hidden] { display: none !important; }
@@ -323,10 +354,11 @@
 .viewer-body .md-para,
 .viewer-notes .md-para {
   background: var(--bg-soft);
-  border-radius: 8px;
-  padding: 12px 14px;
-  margin: 0 0 10px;
-  border-left: 3px solid #d0dbe6;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin: 0 0 12px;
+  border-left: 4px solid var(--primary-light);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
 }
 .viewer-body .md-para + .md-para,
 .viewer-notes .md-para + .md-para {
@@ -383,11 +415,18 @@
 /* 키워드 강조 */
 .viewer-body .kw-term,
 .viewer-notes .kw-term {
-  background: linear-gradient(180deg, transparent 55%, #fff3a6 55%);
+  background: linear-gradient(180deg, transparent 60%, #fff3a6 60%);
   color: var(--text);
-  font-weight: 600;
-  padding: 0 1px;
+  font-weight: 700;
+  padding: 0 2px;
   border-radius: 2px;
+}
+@media (prefers-color-scheme: dark) {
+  .viewer-body .kw-term,
+  .viewer-notes .kw-term {
+    background: linear-gradient(180deg, transparent 60%, rgba(255, 220, 60, 0.35) 60%);
+    color: #fff5b0;
+  }
 }
 .viewer-body .kw-ro,
 .viewer-notes .kw-ro {
@@ -446,24 +485,27 @@
   display: inline-flex;
   background: var(--bg-soft);
   border: 1px solid var(--border);
-  border-radius: 24px;
-  padding: 4px;
-  margin: 0 auto 18px;
+  border-radius: 28px;
+  padding: 5px;
+  margin: 0 auto 20px;
   gap: 2px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 .mode-tab {
-  padding: 8px 18px;
-  border-radius: 20px;
-  font-size: 13.5px;
+  padding: 9px 22px;
+  border-radius: 22px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--text-muted);
   text-decoration: none;
-  transition: all .15s;
+  transition: all .18s;
+  letter-spacing: -0.2px;
 }
-.mode-tab:hover { color: var(--text); }
+.mode-tab:hover { color: var(--text); background: rgba(0,0,0,0.03); }
 .mode-tab.active {
-  background: var(--primary);
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
   color: #fff;
+  box-shadow: 0 3px 10px rgba(31,78,121,0.28);
 }
 
 /* source filter */
@@ -606,4 +648,20 @@
   .rad-intro h1 { font-size: 24px; }
   .rad-filter { flex-direction: column; }
   .rad-filter input[type="search"] { width: 100%; }
+  .rad-mode-tabs { padding: 4px; }
+  .mode-tab { padding: 7px 16px; font-size: 13px; }
+  .viewer-tags .tag { font-size: 10.5px; padding: 2px 7px; }
+  .viewer-body { font-size: 14px; }
+  .viewer-body .md-para,
+  .viewer-notes .md-para { padding: 10px 12px; }
+}
+
+/* ---------- 다크 모드 대비 보강 ---------- */
+@media (prefers-color-scheme: dark) {
+  .viewer-body .md-para,
+  .viewer-notes .md-para { box-shadow: 0 1px 4px rgba(0,0,0,0.25); }
+  .viewer-tags .tag-dx { background: #4a1a1a; color: #ffb5b5; border-color: #7a2c2c; }
+  .viewer-tags .tag-finding { background: #1c2f44; color: #9cc8ee; border-color: #2e4665; }
+  .source-pill.active { background: rgba(88,166,255,0.15); border-color: var(--primary); }
+  .slide-card .card-dx { filter: brightness(0.95) saturate(0.9); }
 }

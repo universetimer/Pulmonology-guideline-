@@ -20,7 +20,7 @@
   const LS_KEY = 'radQuizScores';
 
   // ---------- load ----------
-  const DATA_VERSION = '20260526-3';
+  const DATA_VERSION = '20260527-1';
   async function load() {
     try {
       const res = await fetch(`assets/radiology.json?v=${DATA_VERSION}`, { cache: 'no-cache' });
