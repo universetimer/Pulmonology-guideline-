@@ -953,17 +953,16 @@ header.site-header nav a.nav-youtube:hover {
 }
 .yt-section-more:hover { text-decoration: underline; }
 
-/* Shorts - 깔끔한 반응형 그리드 (캐러셀 X) */
+/* Shorts - 깔끔한 반응형 그리드 (16:9 가로 카드) */
 .yt-shorts-carousel {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 14px;
   padding: 4px 0;
 }
-@media (max-width: 1100px) { .yt-shorts-carousel { grid-template-columns: repeat(5, 1fr); } }
-@media (max-width: 880px)  { .yt-shorts-carousel { grid-template-columns: repeat(4, 1fr); } }
-@media (max-width: 640px)  { .yt-shorts-carousel { grid-template-columns: repeat(3, 1fr); gap: 10px; } }
-@media (max-width: 380px)  { .yt-shorts-carousel { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 1100px) { .yt-shorts-carousel { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 760px)  { .yt-shorts-carousel { grid-template-columns: repeat(2, 1fr); gap: 10px; } }
+@media (max-width: 440px)  { .yt-shorts-carousel { grid-template-columns: 1fr; } }
 
 .yt-shorts-carousel::-webkit-scrollbar { display: none; }
 
@@ -980,13 +979,14 @@ header.site-header nav a.nav-youtube:hover {
   min-width: 0;            /* grid item이 그리드를 깨지 않도록 */
 }
 .yt-short-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(255,0,0,0.18);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255,0,0,0.18);
   border-color: #ff5050;
+  z-index: 1;
 }
 .yt-short-thumb {
   position: relative;
-  aspect-ratio: 9 / 16;
+  aspect-ratio: 16 / 9;          /* YouTube 썸네일 원본 비율 */
   background: #0a0a0a;
   overflow: hidden;
   width: 100%;
@@ -998,9 +998,7 @@ header.site-header nav a.nav-youtube:hover {
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform .25s ease;
 }
-.yt-short-card:hover .yt-short-thumb img { transform: scale(1.05); }
 .yt-short-play {
   position: absolute;
   top: 50%;
