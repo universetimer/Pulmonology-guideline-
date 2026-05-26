@@ -7,8 +7,31 @@
   X-Frame-Options: SAMEORIGIN
   Permissions-Policy: camera=(), microphone=(), geolocation=()
 
+# HTML 페이지는 짧은 캐시 + revalidate (콘텐츠 즉시 반영)
+/*.html
+  Cache-Control: public, max-age=300, must-revalidate
+
+/
+  Cache-Control: public, max-age=300, must-revalidate
+
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
+
+# JSON 데이터는 자주 갱신되므로 짧은 캐시 + revalidate
+/assets/radiology.json
+  Cache-Control: public, max-age=300, must-revalidate
+
+/assets/youtube.json
+  Cache-Control: public, max-age=300, must-revalidate
+
+/assets/questions.json
+  Cache-Control: public, max-age=300, must-revalidate
+
+/assets/toc.json
+  Cache-Control: public, max-age=300, must-revalidate
+
+/assets/search-index.json
+  Cache-Control: public, max-age=300, must-revalidate
 
 /images/*
   Cache-Control: public, max-age=2592000

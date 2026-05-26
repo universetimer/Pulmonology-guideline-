@@ -16,9 +16,11 @@
   const $ = sel => document.querySelector(sel);
 
   // ---------- load ----------
+  // 빌드 버전 — 데이터 갱신 시 이 값을 올리면 클라이언트가 새 JSON 강제 fetch
+  const DATA_VERSION = '20260526-2';
   async function load() {
     try {
-      const res = await fetch('assets/radiology.json');
+      const res = await fetch(`assets/radiology.json?v=${DATA_VERSION}`, { cache: 'no-cache' });
       STATE.data = await res.json();
       init();
     } catch (e) {
