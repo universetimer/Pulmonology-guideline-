@@ -154,6 +154,71 @@ main.content {
   line-height: 1.35;
   scroll-margin-top: 76px;
 }
+
+/* 매뉴얼 표지 (첫 7개 paragraph): "호흡기 내과 주치의 매뉴얼 ..." */
+.doc > p:nth-child(-n+7) {
+  text-align: center;
+  margin: 0;
+}
+/* 첫 두 줄(호흡기 내과 주치의 / 매뉴얼)을 큰 제목으로 */
+.doc > p:nth-child(1) strong,
+.doc > p:nth-child(2) strong {
+  font-size: 36px;
+  color: var(--primary);
+  letter-spacing: -1px;
+  display: block;
+  margin: 4px 0;
+  line-height: 1.1;
+}
+.doc > p:nth-child(1) { margin-top: 32px; }
+.doc > p:nth-child(2) { margin-bottom: 18px; }
+/* 2025.9 (Version 18) 사이즈 줄이고 강조색 */
+.doc > p:nth-child(3) strong,
+.doc > p:nth-child(4) strong {
+  font-size: 16px;
+  color: var(--text-muted);
+  font-weight: 600;
+  display: block;
+}
+.doc > p:nth-child(4) { margin-bottom: 28px; }
+
+/* 표지 영역 본문 (QR + 소개 텍스트): 가운데 정렬·세련 */
+.doc > p:nth-child(5),
+.doc > p:nth-child(6),
+.doc > p:nth-child(7) {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: var(--text);
+}
+/* QR 코드: 항상 위쪽 중앙, 텍스트와 분리 */
+.doc > p:nth-child(5) img {
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin: 12px auto 18px;
+  border-radius: 14px;
+  background: #fff;
+  padding: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  border: 1px solid var(--border);
+}
+/* 표지 본문의 ** 표시 제거 효과는 어렵지만 strong 색 통일 */
+.doc > p:nth-child(5) strong {
+  display: block;
+  font-weight: 500;
+  font-size: 14.5px;
+  color: var(--text);
+}
+.doc > p:nth-child(6) strong,
+.doc > p:nth-child(7) strong {
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 13.5px;
+}
 .doc h1 {
   margin: 36px 0 12px;
   padding-bottom: 8px;
