@@ -888,36 +888,31 @@ header.site-header nav a.nav-youtube:hover {
 }
 .yt-section-more:hover { text-decoration: underline; }
 
+/* Shorts - 깔끔한 반응형 그리드 (캐러셀 X) */
 .yt-shorts-carousel {
   display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 160px;
-  gap: 12px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding: 4px 4px 14px;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: thin;
-  scrollbar-color: #ff5050 transparent;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+  padding: 4px 0;
 }
-.yt-shorts-carousel::-webkit-scrollbar { height: 8px; }
-.yt-shorts-carousel::-webkit-scrollbar-thumb {
-  background: linear-gradient(90deg, #ff0000, #ff5050);
-  border-radius: 4px;
-}
-.yt-shorts-carousel::-webkit-scrollbar-track { background: transparent; }
+@media (max-width: 1100px) { .yt-shorts-carousel { grid-template-columns: repeat(5, 1fr); } }
+@media (max-width: 880px)  { .yt-shorts-carousel { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 640px)  { .yt-shorts-carousel { grid-template-columns: repeat(3, 1fr); gap: 10px; } }
+@media (max-width: 380px)  { .yt-shorts-carousel { grid-template-columns: repeat(2, 1fr); } }
+
+.yt-shorts-carousel::-webkit-scrollbar { display: none; }
 
 .yt-short-card {
-  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
-  text-decoration: none;
+  text-decoration: none !important;
   color: inherit;
-  border-radius: 12px;
+  border-radius: 10px;
   overflow: hidden;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  transition: all .18s;
+  transition: all .18s ease;
+  min-width: 0;            /* grid item이 그리드를 깨지 않도록 */
 }
 .yt-short-card:hover {
   transform: translateY(-3px);
@@ -929,13 +924,18 @@ header.site-header nav a.nav-youtube:hover {
   aspect-ratio: 9 / 16;
   background: #0a0a0a;
   overflow: hidden;
+  width: 100%;
 }
 .yt-short-thumb img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform .25s ease;
 }
+.yt-short-card:hover .yt-short-thumb img { transform: scale(1.05); }
 .yt-short-play {
   position: absolute;
   top: 50%;
@@ -1001,6 +1001,6 @@ header.site-header nav a.nav-youtube:hover {
 @media (max-width: 480px) { .yt-longform-grid { grid-template-columns: 1fr; } }
 
 @media (max-width: 600px) {
-  .yt-shorts-carousel { grid-auto-columns: 138px; gap: 10px; }
   .yt-short-title { font-size: 12px; }
+  .yt-short-meta { padding: 6px 8px; }
 }

@@ -4,7 +4,7 @@
   const grid = document.getElementById('ytGrid');
   if (!grid) return;
 
-  fetch('assets/youtube.json?v=20260526-2', { cache: 'no-cache' })
+  fetch('assets/youtube.json?v=20260526-3', { cache: 'no-cache' })
     .then(r => r.json())
     .then(data => render(data))
     .catch(err => {

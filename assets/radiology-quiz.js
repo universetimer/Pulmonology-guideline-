@@ -20,7 +20,7 @@
   const LS_KEY = 'radQuizScores';
 
   // ---------- load ----------
-  const DATA_VERSION = '20260526-2';
+  const DATA_VERSION = '20260526-3';
   async function load() {
     try {
       const res = await fetch(`assets/radiology.json?v=${DATA_VERSION}`, { cache: 'no-cache' });
@@ -37,6 +37,29 @@
     const pool = STATE.data.quiz_pools || {};
     const dxN = (pool.dx_ids || []).length;
     const fdN = (pool.finding_ids || []).length;
+
+    // 데이터가 비어있으면 (옛 캐시 데이터일 가능성) 사용자에게 강제 새로고침 안내
+    if (dxN === 0 && fdN === 0) {
+      const sel = document.getElementById('rq-select');
+      if (sel) {
+        sel.innerHTML = `
+          <div style="text-align:center;padding:60px 20px;">
+            <div style="font-size:48px;margin-bottom:16px;">🔄</div>
+            <h2 style="color:#c00;margin:0 0 10px;">데이터가 오래되었습니다</h2>
+            <p style="color:#555;line-height:1.7;margin:0 0 20px;">
+              브라우저에 저장된 옛 데이터가 로드되었습니다.<br>
+              아래 버튼을 누르거나 <b>Ctrl+Shift+R</b> (Mac: <b>Cmd+Shift+R</b>) 로 강제 새로고침해주세요.
+            </p>
+            <button onclick="location.reload(true)" style="
+              background:#1f4e79;color:#fff;border:none;padding:12px 28px;
+              border-radius:24px;font-size:14px;font-weight:600;cursor:pointer;">
+              🔄 강제 새로고침
+            </button>
+          </div>`;
+      }
+      return;
+    }
+
     $('#dxPoolMeta').textContent = `${dxN}문항 풀`;
     $('#findingPoolMeta').textContent = `${fdN}문항 풀`;
 
