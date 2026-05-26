@@ -988,17 +988,21 @@ header.site-header nav a.nav-youtube:hover {
 .yt-short-thumb {
   position: relative !important;
   width: 110px !important;
-  height: 110px !important;     /* 정사각형 — 컴포지트 썸네일도 깔끔히 표시 */
+  height: 110px !important;     /* 정사각형 */
   aspect-ratio: 1 / 1 !important;
   background: #0a0a0a !important;
   overflow: hidden !important;
   flex-shrink: 0 !important;
 }
+/* hqdefault.jpg는 가로 16:9 프레임 안에 vertical Shorts가 중앙 배치됨.
+   좌우 검정 패딩(흐린 배경)을 잘라내기 위해 1.5배 확대해서 중앙만 보이게. */
 .yt-short-thumb img {
   position: absolute !important;
-  inset: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: auto !important;
+  height: 150% !important;        /* 높이 기준 1.5배 확대 → 정중앙의 vertical 콘텐츠만 표시 */
+  transform: translate(-50%, -50%) !important;
   object-fit: cover !important;
   display: block !important;
 }
